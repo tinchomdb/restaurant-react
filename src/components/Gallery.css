@@ -1,0 +1,42 @@
+.gallery {
+  padding-top: 3rem;
+}
+
+.gallery-title {
+  margin-bottom: 1.5em;
+}
+
+.gallery-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photo-wrapper {
+  overflow: hidden;
+  width: 33.33333%;
+  height: 300px;
+  margin: 0;
+}
+
+.gallery-photo {
+  object-fit: cover;
+  width: 100%;
+  min-height: 100%;
+}
+
+.gallery-photo:hover {
+  transform: scale(1.15);
+  transition: 0.5s;
+}
+
+@media (max-width: 1100px) {
+  .photo-wrapper {
+    width: 50%;
+  }
+}
+
+@media (max-width: 700px) {
+  .photo-wrapper {
+    width: 100%;
+  }
+}
