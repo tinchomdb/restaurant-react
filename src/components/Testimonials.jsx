@@ -48,7 +48,6 @@ function Testimonials() {
           </Carousel>
         </div>
       </Parallax>
-      <div className="a"></div>
     </div>
   );
 }
