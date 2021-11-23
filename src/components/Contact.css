@@ -1,5 +1,44 @@
+.contact {
+  margin-top: 3rem;
+}
+
+.contact-info {
+  display: flex;
+  gap: 5%;
+  padding: 1em;
+}
+
+.map-wrapper {
+  width: 100%;
+}
 .map {
   border: none;
   width: 100%;
-  height: 600px;
+  height: 100%;
+}
+
+.contact-links {
+  width: 100%;
+}
+
+.contact-title {
+  margin-top: 0;
+}
+.social-item {
+  display: flex;
+  align-items: center;
+}
+
+.social-item p {
+  margin-left: 1em;
+}
+
+@media (max-width: 800px) {
+  .contact-info {
+    display: block;
+  }
+  .map-wrapper {
+    height: 400px;
+    margin-bottom: 3em;
+  }
 }
