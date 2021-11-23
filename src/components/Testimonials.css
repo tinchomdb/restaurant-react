@@ -1,0 +1,38 @@
+.a {
+  height: 1000px;
+}
+
+.testimonials {
+  margin-top: 4em;
+}
+
+.text-wrapper {
+  padding: 4em 1em;
+
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  text-shadow: 2px 2px 7px rgba(0, 0, 0, 1);
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.testimonials-title,
+.testimonial-text {
+  color: white;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.testimonials-title {
+  margin-bottom: 2em;
+}
+
+.testimonial-text {
+  margin-bottom: 3em;
+}
+
+.testimonial-text {
+  font-size: 1.3rem;
+  line-height: 1.5em;
+  font-weight: 300;
+}

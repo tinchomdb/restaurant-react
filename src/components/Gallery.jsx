@@ -1,33 +1,16 @@
 import React from "react";
 import "./Gallery.css";
+import GalleryPhoto from "./GalleryPhoto";
+import picadas from "../data/picadas.js";
 
 function Gallery() {
   return (
     <div className="gallery">
       <h2 className="gallery-title container">Galería</h2>
       <div className="gallery-wrapper">
-        <div className="photo-wrapper">
-          <img src="/img/tradicional.jpg" alt="" className="gallery-photo" />
-        </div>
-        <div className="photo-wrapper">
-          <img src="/img/detacos.jpg" alt="" className="gallery-photo" />
-        </div>
-        <div className="photo-wrapper">
-          <img src="/img/fondue.jpg" alt="" className="gallery-photo" />
-        </div>
-        <div className="photo-wrapper">
-          <img src="/img/Onda verde.jpg" alt="" className="gallery-photo" />
-        </div>
-        <div className="photo-wrapper">
-          <img
-            src="/img/especial picardo.jpg"
-            alt=""
-            className="gallery-photo"
-          />
-        </div>
-        <div className="photo-wrapper">
-          <img src="/img/regalo1.jpg" alt="" className="gallery-photo" />
-        </div>
+        {picadas.map((picada, index) => (
+          <GalleryPhoto picada={picada} key={picada.title} />
+        ))}
       </div>
     </div>
   );

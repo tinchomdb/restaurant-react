@@ -23,9 +23,7 @@ function CarouselResto() {
             <h3 className="slide-title">Slide Title</h3>
             <h1>Las Mejores Picadas de Mendoza</h1>
 
-            <a href="#team" class="section-btn btn btn-default smoothScroll">
-              Meet our chef
-            </a>
+            <a href="#team">Meet our chef</a>
           </div>
         </div>
         <div className="slide">
@@ -34,9 +32,7 @@ function CarouselResto() {
             <h3 className="slide-title">Slide Title</h3>
             <h1>Las Mejores Picadas de Mendoza</h1>
 
-            <a href="#team" class="section-btn btn btn-default smoothScroll">
-              Meet our chef
-            </a>
+            <a href="#team">Meet our chef</a>
           </div>
         </div>
       </Carousel>
