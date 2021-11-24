@@ -1,2 +1,10 @@
-.parallax-background {
+.carta {
+  color: white;
+}
+
+.carta-section-title {
+  color: white;
+  font-size: 2rem;
+  margin-top: 70px;
+  text-transform: uppercase;
 }

@@ -21,12 +21,26 @@
   object-fit: contain;
 }
 
-.picada h2 {
+.picada h3 {
   margin-top: 0px;
   color: white;
 }
 .picada p {
   color: white;
+}
+
+.price-item {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 2em;
+}
+.price-item span {
+  width: 100px;
+}
+
+.price-item .price {
+  width: 70px;
 }
 
 @media (max-width: 800px) {
