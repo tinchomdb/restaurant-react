@@ -1,6 +1,7 @@
 .about {
   display: flex;
   padding-top: 2em;
+  gap: 1em;
 }
 
 .about-text {
@@ -9,7 +10,6 @@
 
 .about-image {
   width: 100%;
-
   object-fit: contain;
 }
 

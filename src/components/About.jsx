@@ -11,15 +11,12 @@ function About() {
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae
             tenetur, eligendi fugit minima quam hic est porro, accusamus
-            perferendis ipsa ad sint doloremque consequatur. Explicabo sunt
-            velit dolorem blanditiis suscipit saepe, dicta laboriosam quisquam
-            nostrum. Nam deserunt saepe recusandae non?
+            perferendis ipsa ad sint doloremque consequatur.
           </p>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
             maiores eaque provident quidem iste numquam soluta, dolorum quo
-            vero, culpa ducimus vitae ipsam molestiae enim magni nemo! Tenetur
-            at eos doloribus natus nobis amet voluptatum!
+            vero, culpa ducimus vitae ipsam molestiae enim magni nemo!
           </p>
         </div>
 

@@ -28,11 +28,11 @@
   padding-right: 22px;
   padding-left: 22px;
   text-transform: uppercase;
+  transition: all ease-in-out 0.4s;
 }
 
 .navbar li:hover {
   color: red;
-  transition: all ease-in-out 0.4s;
 }
 
 .navbar-links {
