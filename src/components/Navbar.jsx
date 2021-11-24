@@ -1,6 +1,7 @@
 import { Close, Menu } from "@mui/icons-material";
 import React, { useState } from "react";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -18,23 +19,27 @@ function Navbar() {
         {/* <!-- MENU LINKS --> */}
 
         <ul className={toggleMenu ? "navbar-links active" : "navbar-links"}>
+          <Link to="/">
+            <li>
+              <a href="#home" className="smoothScroll">
+                Inicio
+              </a>
+            </li>
+          </Link>
+          <Link to="/carta">
+            <li>
+              <span href="#menu" className="smoothScroll">
+                Carta
+              </span>
+            </li>
+          </Link>
           <li>
-            <a href="#home" className="smoothScroll">
-              Inicio
-            </a>
-          </li>
-          <li>
-            <a href="#menu" className="smoothScroll">
-              Carta
-            </a>
-          </li>
-          <li>
-            <a href="#team" className="smoothScroll">
+            <a href="#a" className="smoothScroll">
               Delivery
             </a>
           </li>
           <li>
-            <a href="#about" className="smoothScroll">
+            <a href="#a" className="smoothScroll">
               Regalos
             </a>
           </li>
@@ -45,7 +50,7 @@ function Navbar() {
             </a>
           </li>
           <li id="nav-li-button">
-            <a href="#footer" className="nav-button">
+            <a href="#a" className="nav-button">
               Reservar
             </a>
           </li>

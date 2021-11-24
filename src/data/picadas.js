@@ -3,7 +3,7 @@ const picadas = [
     title: "Tradicional",
     photo: "/img/tradicional.jpg",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repellat accusantium corporis nulla magni. Inventore dignissimos harum reprehenderit veniam quo?",
+      "Jamón crudo, queso Roquefort, salame picado grueso, lomito cocido, jamón cocido natural, queso Provolone, mortadela, queso Tybo, queso Gruyere, aceitunas verdes.",
     chica: 10,
     mediana: 20,
     grande: 30,
@@ -13,7 +13,7 @@ const picadas = [
     title: "De Campo",
     photo: "/img/decampo.jpg",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repellat accusantium corporis nulla magni. Inventore dignissimos harum reprehenderit veniam quo?",
+      "Lomito de cerdo, jamón crudo, salame Cracovia, queso ahumado, queso Pategrás, paté especial, mortadela, queso Pepato, salame picado grueso, queso Gruyere, aceitunas verdes. ",
     chica: 10,
     mediana: 20,
     grande: 30,
@@ -23,7 +23,7 @@ const picadas = [
     title: "De Carnes",
     photo: "/img/decarnes.jpg",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repellat accusantium corporis nulla magni. Inventore dignissimos harum reprehenderit veniam quo?",
+      "Rabas, mollejas, bondiola de cerdo a la barbacoa, pinchos de lomo y queso Cheddar, pinchos de chorizo y tomate cherry, pollo al wok con panceta y verdeo, ensalada mixta.",
     chica: 10,
     mediana: 20,
     grande: 30,
@@ -33,7 +33,7 @@ const picadas = [
     title: "Caliente",
     photo: "/img/caliente.jpg",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repellat accusantium corporis nulla magni. Inventore dignissimos harum reprehenderit veniam quo?",
+      "Pinchos de lomo con queso Cheddar, pollo al wok con panceta y verdeo, empanaditas criollas, tostados de jamón cocido y queso Cheddar, pinchos de chorizo y tomates cherry, minipizzas de Mozzarella. ",
     chica: 10,
     mediana: 20,
     grande: 30,
@@ -43,7 +43,7 @@ const picadas = [
     title: "De Tacos",
     photo: "/img/detacos.jpg",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repellat accusantium corporis nulla magni. Inventore dignissimos harum reprehenderit veniam quo?",
+      "Tortillas para armar tacos con los siguientes rellenos: carne vacuna, bondiola de cerdo, pollo grillado, salsa criolla, guacamole, frijoles, lechuga y tomate, crema de Cheddar, compañado de nachos.",
     chica: 10,
     mediana: 20,
     grande: 30,
@@ -53,7 +53,7 @@ const picadas = [
     title: "Fondue",
     photo: "/img/fondue.jpg",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repellat accusantium corporis nulla magni. Inventore dignissimos harum reprehenderit veniam quo?",
+      "Carne de lomo, salchichas asadas, jamón cocido natural, pollo, chorizos, tomate cherry, champignones, brócoli y crutones para bañar en quesos fundidos con vino blanco.",
     chica: 10,
     mediana: 20,
     grande: 30,
@@ -63,7 +63,7 @@ const picadas = [
     title: "Onda Verde",
     photo: "/img/ondaverde.jpg",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repellat accusantium corporis nulla magni. Inventore dignissimos harum reprehenderit veniam quo?",
+      "Empanaditas de humita, palmitos con salsa Golf, wok de hongos, frutos secos, Provolone, salsa criolla, guacamole, tomates secos, queso Roquefort, empanaditas Caprese, ensalada mixta con semillas, cebollitas al escabeche.",
     chica: 10,
     mediana: 20,
     grande: 30,

@@ -1,0 +1,36 @@
+.picada {
+  display: flex;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  gap: 1em;
+}
+.picada-wrapper:nth-of-type(2n) {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.picada-wrapper:nth-of-type(2n) .picada {
+  flex-direction: row-reverse;
+}
+
+.picada-text {
+  width: 100%;
+}
+
+.picada-image {
+  width: 100%;
+  object-fit: contain;
+}
+
+.picada h2 {
+  margin-top: 0px;
+  color: white;
+}
+.picada p {
+  color: white;
+}
+
+@media (max-width: 800px) {
+  .picada {
+    display: block;
+  }
+}
