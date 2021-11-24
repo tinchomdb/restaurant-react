@@ -1,0 +1,35 @@
+.section {
+  display: flex;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  gap: 1em;
+}
+.section-wrapper:nth-of-type(2n) {
+  background-color: #f9f9f9;
+}
+
+.section-wrapper:nth-of-type(2n) .section {
+  flex-direction: row-reverse;
+}
+
+.section-text {
+  width: 100%;
+}
+
+.section-image {
+  width: 100%;
+  object-fit: contain;
+}
+
+.section h4 {
+  text-transform: uppercase;
+  color: #bfbdbd;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 800px) {
+  .section {
+    display: block;
+  }
+}

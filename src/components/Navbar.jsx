@@ -10,7 +10,7 @@ function Navbar() {
       <div className="navbar container">
         <div className="navbar-header">
           {/* lOGO TEXT HERE */}
-          <a href="index.html" className="navbar-brand">
+          <a href="/" className="navbar-brand">
             Picardo <span>.</span> Restaurant
           </a>
         </div>
@@ -24,8 +24,8 @@ function Navbar() {
             </a>
           </li>
           <li>
-            <a href="#about" className="smoothScroll">
-              Regalos
+            <a href="#menu" className="smoothScroll">
+              Carta
             </a>
           </li>
           <li>
@@ -34,10 +34,11 @@ function Navbar() {
             </a>
           </li>
           <li>
-            <a href="#menu" className="smoothScroll">
-              Carta
+            <a href="#about" className="smoothScroll">
+              Regalos
             </a>
           </li>
+
           <li>
             <a href="#contact" className="smoothScroll">
               Contacto

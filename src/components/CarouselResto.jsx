@@ -15,7 +15,7 @@ const settings = {
 
 function CarouselResto() {
   return (
-    <div>
+    <div id="home">
       <Carousel {...settings} className="carousel-resto">
         <div className="slide">
           <img className="slide-image" src="img/picardo.jpg" alt="" />
