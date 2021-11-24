@@ -12,21 +12,45 @@ function Picada({ picada, even }) {
           <h3>{picada?.title}</h3>
           <p>{picada?.description}</p>
           <div className="prices">
-            <div className="price-item">
-              <span className="size">Chica</span>
-              <span className="price">${picada.chica}</span>
-              <span>Come 1</span>
-            </div>
-            <div className="price-item">
-              <span className="size">Mediana</span>
-              <span className="price">${picada.mediana}</span>
-              <span>Come 2</span>
-            </div>
-            <div className="price-item">
-              <span className="size">Grande</span>
-              <span className="price">${picada.grande}</span>
-              <span>Come 3</span>
-            </div>
+            {picada.chica ? (
+              <div className="price-item">
+                <span className="size">Chica</span>
+                <span className="price">${picada.chica}</span>
+                <span>Come 1</span>
+              </div>
+            ) : (
+              ""
+            )}
+
+            {picada.mediana ? (
+              <div className="price-item">
+                <span className="size">Mediana</span>
+                <span className="price">${picada.mediana}</span>
+                <span>Comen 2</span>
+              </div>
+            ) : (
+              ""
+            )}
+
+            {picada.grande ? (
+              <div className="price-item">
+                <span className="size">Grande</span>
+                <span className="price">${picada.grande}</span>
+                <span>Comen 3</span>
+              </div>
+            ) : (
+              ""
+            )}
+
+            {picada.extra ? (
+              <div className="price-item">
+                <span className="size">Extra Grande</span>
+                <span className="price">${picada.extra}</span>
+                <span>Comen 4</span>
+              </div>
+            ) : (
+              ""
+            )}
           </div>
         </div>
 

@@ -54,9 +54,9 @@ const picadas = [
     photo: "/img/fondue.jpg",
     description:
       "Carne de lomo, salchichas asadas, jamón cocido natural, pollo, chorizos, tomate cherry, champignones, brócoli y crutones para bañar en quesos fundidos con vino blanco.",
-    chica: 10,
-    mediana: 20,
-    grande: 30,
+
+    mediana: 1500,
+    extra: 3000,
     showInGallery: true,
   },
   {
@@ -74,9 +74,7 @@ const picadas = [
     photo: "/img/especialpicardo.jpg",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repellat accusantium corporis nulla magni. Inventore dignissimos harum reprehenderit veniam quo?",
-    chica: 10,
-    mediana: 20,
-    grande: 30,
+    extra: 2000,
     showInGallery: true,
   },
   {

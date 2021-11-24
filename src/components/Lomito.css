@@ -1,0 +1,41 @@
+.lomito-wrapper {
+  width: 40%;
+  margin-bottom: 3em;
+}
+
+.lomito-text {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1em;
+}
+
+.lomito-text h3 {
+  margin-top: 0px;
+  color: white;
+  text-align: center;
+}
+.lomito-text p {
+  color: white;
+  text-align: center;
+}
+
+.price-item {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 2em;
+}
+.price-item span {
+  width: 120px;
+}
+
+.price-item .price {
+  width: 70px;
+}
+
+@media (max-width: 800px) {
+  .lomito-wrapper {
+    width: 100%;
+  }
+}

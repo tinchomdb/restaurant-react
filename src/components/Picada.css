@@ -13,11 +13,11 @@
 }
 
 .picada-text {
-  width: 100%;
+  width: 50%;
 }
 
 .picada-image {
-  width: 100%;
+  width: 50%;
   object-fit: contain;
 }
 
@@ -36,7 +36,7 @@
   height: 2em;
 }
 .price-item span {
-  width: 100px;
+  width: 120px;
 }
 
 .price-item .price {
@@ -46,5 +46,12 @@
 @media (max-width: 800px) {
   .picada {
     display: block;
+  }
+  .picada-text {
+    width: 100%;
+  }
+
+  .picada-image {
+    width: 100%;
   }
 }

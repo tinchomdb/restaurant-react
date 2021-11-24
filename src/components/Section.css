@@ -13,11 +13,11 @@
 }
 
 .section-text {
-  width: 100%;
+  width: 50%;
 }
 
 .section-image {
-  width: 100%;
+  width: 50%;
   object-fit: contain;
 }
 
@@ -31,5 +31,12 @@
 @media (max-width: 800px) {
   .section {
     display: block;
+  }
+  .section-text {
+    width: 100%;
+  }
+
+  .section-image {
+    width: 100%;
   }
 }
