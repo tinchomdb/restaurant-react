@@ -3,7 +3,7 @@ import "./GalleryPhoto.css";
 
 function GalleryPhoto({ picada }) {
   return (
-    <div className="photo-wrapper">
+    <div className="photo-wrapper" data-aos="zoom-in-up">
       <img src={picada?.photo} alt="" className="gallery-photo" />
       <div className="photo-text-wrapper">
         <div className="photo-text">

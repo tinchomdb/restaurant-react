@@ -5,7 +5,6 @@
 .contact-info {
   display: flex;
   gap: 5%;
-  padding: 1em;
 }
 
 .map-wrapper {

@@ -16,7 +16,7 @@ const settings = {
 
 function Testimonials() {
   return (
-    <div className="testimonials">
+    <div className="testimonials" data-aos="fade-up">
       <Parallax
         blur={0}
         bgImage="img/parallax.jpg"

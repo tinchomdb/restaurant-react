@@ -5,7 +5,7 @@ import picadas from "../data/picadas.js";
 
 function Gallery() {
   return (
-    <div className="gallery">
+    <div className="gallery" data-aos="fade-up">
       <h2 className="gallery-title container">Galería</h2>
       <div className="gallery-wrapper">
         {picadas.map((picada, index) => (

@@ -5,7 +5,7 @@ function About() {
   return (
     <div className="about-wrapper">
       <div className="about container">
-        <div className="about-text">
+        <div className="about-text" data-aos="fade-right">
           <h4>Conoce nuestra historia</h4>
           <h2>Haciendo las mejores picadas desde 2011</h2>
           <p>
@@ -23,7 +23,12 @@ function About() {
           </p>
         </div>
 
-        <img className="about-image" src="img/about-image.jpg" alt="" />
+        <img
+          className="about-image"
+          src="img/regalo3.jpg"
+          alt=""
+          data-aos="fade-left"
+        />
       </div>
     </div>
   );
