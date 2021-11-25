@@ -20,11 +20,7 @@ function Navbar() {
 
         <ul className={toggleMenu ? "navbar-links active" : "navbar-links"}>
           <Link to="/#home">
-            <li>
-              <a href="#home" className="smoothScroll">
-                Inicio
-              </a>
-            </li>
+            <li>Inicio</li>
           </Link>
           <Link to="/carta#home">
             <li>

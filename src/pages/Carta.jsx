@@ -1,13 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
+import "./Carta.css";
 import Navbar from "../components/Navbar";
 import Picada from "../components/Picada";
 import Lomito from "../components/Lomito";
+import Bebida from "../components/Bebida";
 import picadas from "../data/picadas";
 import lomitos from "../data/lomitos";
 import bebidas from "../data/bebidas";
-
-import "./Carta.css";
-import Bebida from "../components/Bebida";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const bebidasSinAlcohol = bebidas.filter(
   (bebida) => bebida.category === "Bebidas sin Alcohol"
@@ -32,7 +33,15 @@ const cervezasLataArtesanal = bebidas.filter(
 );
 
 function Carta() {
+  useEffect(() => {
+    Aos.init({
+      duration: 600,
+      easing: "ease-out",
+    });
+  }, []);
+
   let even = false;
+
   return (
     <div
       className="carta-wrapper"
@@ -45,7 +54,7 @@ function Carta() {
 
         <div className="carta-section">
           <h2 className="carta-section-title container">Picadas</h2>
-          {picadas.map((item, index) => {
+          {picadas?.map((item, index) => {
             if (index % 2 === 0) {
               even = true;
             } else {
