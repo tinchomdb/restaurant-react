@@ -49,7 +49,7 @@ function Carta() {
         backgroundImage: `url("/img/chalkboard-background.jpg")`,
       }}
     >
-      <div className="container">
+      <div id="home" className="container">
         <Navbar />
 
         <div className="carta-section">
