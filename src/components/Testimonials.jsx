@@ -7,7 +7,7 @@ const settings = {
   infiniteLoop: true,
   showThumbs: false,
   useKeyboardArrows: true,
-  swipeable: true,
+  swipeable: false,
   showIndicators: true,
   autoPlay: true,
   interval: 5000,

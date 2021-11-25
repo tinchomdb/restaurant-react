@@ -7,10 +7,11 @@ const settings = {
   infiniteLoop: true,
   showThumbs: false,
   useKeyboardArrows: true,
-  swipeable: true,
+  swipeable: false,
   showIndicators: false,
   autoPlay: true,
   interval: 3000,
+  showStatus: false,
 };
 
 function CarouselResto() {
