@@ -8,7 +8,6 @@
   margin: 2em 1em;
 }
 .picada-wrapper:nth-of-type(2n) {
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .picada-wrapper:nth-of-type(2n) .picada {

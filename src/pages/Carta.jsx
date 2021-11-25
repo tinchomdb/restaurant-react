@@ -5,7 +5,7 @@ import Lomito from "../components/Lomito";
 import picadas from "../data/picadas";
 import lomitos from "../data/lomitos";
 import bebidas from "../data/bebidas";
-import { Parallax } from "react-parallax";
+
 import "./Carta.css";
 import Bebida from "../components/Bebida";
 
@@ -41,15 +41,15 @@ console.log(cervezasLataArtesanal);
 function Carta() {
   let even = false;
   return (
-    <Parallax blur={0} bgImage="" bgImageAlt="wood" strength={500}>
-      <div
-        className="carta "
-        style={{
-          backgroundImage: `url("/img/chalkboard-background.jpg")`,
-        }}
-      >
+    <div
+      className="carta-wrapper"
+      style={{
+        backgroundImage: `url("/img/chalkboard-background.jpg")`,
+      }}
+    >
+      <div className="container">
         <Navbar />
-        <div id="home">a</div>
+
         <div className="carta-section">
           <h2 className="carta-section-title container">Picadas</h2>
           {picadas.map((item, index) => {
@@ -152,7 +152,7 @@ function Carta() {
           </div>
         </div>
       </div>
-    </Parallax>
+    </div>
   );
 }
 
