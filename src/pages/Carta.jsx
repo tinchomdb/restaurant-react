@@ -80,7 +80,7 @@ function Carta() {
         </div>
         <div className="carta-section ">
           <h2 className="carta-section-title ">Bebidas sin Alcohol</h2>
-          <div className="category-wrapper ">
+          <div className="category-wrapper" data-aos="flip-up">
             <div className="category container">
               <h3 className="category-title ">Gaseosas, Aguas y Jugos</h3>
               <div className="items-wrapper ">
@@ -90,7 +90,7 @@ function Carta() {
               </div>
             </div>
           </div>
-          <div className="category-wrapper">
+          <div className="category-wrapper" data-aos="flip-up">
             <div className="category container">
               <h3 className="category-title ">Cafetería</h3>
               <div className="items-wrapper ">
@@ -102,7 +102,7 @@ function Carta() {
           </div>
 
           <h2 className="carta-section-title ">Cervezas</h2>
-          <div className="category-wrapper">
+          <div className="category-wrapper" data-aos="flip-up">
             <div className="category container">
               <h3 className="category-title">Cervezas de Litro</h3>
               <div className="items-wrapper">
@@ -112,7 +112,7 @@ function Carta() {
               </div>
             </div>
           </div>
-          <div className="category-wrapper">
+          <div className="category-wrapper" data-aos="flip-up">
             <div className="category container">
               <h3 className="category-title">Cervezas Long Neck</h3>
               <div className="items-wrapper ">
@@ -122,7 +122,7 @@ function Carta() {
               </div>
             </div>
           </div>
-          <div className="category-wrapper">
+          <div className="category-wrapper" data-aos="flip-up">
             <div className="category container">
               <h3 className="category-title">Cerveza Lata</h3>
               <div className="items-wrapper ">
@@ -132,7 +132,7 @@ function Carta() {
               </div>
             </div>
           </div>
-          <div className="category-wrapper">
+          <div className="category-wrapper" data-aos="flip-up">
             <div className="category container">
               <h3 className="category-title">Cerveza Tirada</h3>
               <div className="items-wrapper ">
@@ -142,7 +142,7 @@ function Carta() {
               </div>
             </div>
           </div>
-          <div className="category-wrapper">
+          <div className="category-wrapper" data-aos="flip-up">
             <div className="category container">
               <h3 className="category-title">Cerveza Artesanal Lata</h3>
               <div className="items-wrapper ">
