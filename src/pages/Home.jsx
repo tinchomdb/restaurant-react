@@ -20,7 +20,7 @@ function Home() {
   return (
     <div className="home">
       <Navbar />
-      <CarouselResto />
+      <CarouselResto id="home" />
       <About />
       <Gallery />
       <Testimonials />

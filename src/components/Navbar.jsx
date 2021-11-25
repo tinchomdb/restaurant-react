@@ -1,7 +1,7 @@
 import { Close, Menu } from "@mui/icons-material";
 import React, { useState } from "react";
 import "./Navbar.css";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 
 function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -19,14 +19,14 @@ function Navbar() {
         {/* <!-- MENU LINKS --> */}
 
         <ul className={toggleMenu ? "navbar-links active" : "navbar-links"}>
-          <Link to="/">
+          <Link to="/#home">
             <li>
               <a href="#home" className="smoothScroll">
                 Inicio
               </a>
             </li>
           </Link>
-          <Link to="/carta">
+          <Link to="/carta#home">
             <li>
               <span href="#menu" className="smoothScroll">
                 Carta

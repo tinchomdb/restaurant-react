@@ -1,0 +1,45 @@
+.bebida {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dotted-line {
+  border-bottom: 2px dotted white;
+  width: 100%;
+  transform: translateY(-3px);
+}
+
+.bebida-title {
+  flex-shrink: 0;
+}
+
+.category-wrapper:nth-of-type(2n) {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.category-wrapper {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.category-title {
+  margin-top: 0;
+}
+
+@media (min-width: 400px) {
+  .items-wrapper {
+    display: grid;
+    grid-template-columns: 47% 47%;
+    column-gap: 6%;
+  }
+
+  .bebidas-sin-alcohol,
+  .cafeteria {
+  }
+
+  .cervezas-litro {
+  }
+
+  .bebida {
+  }
+}
