@@ -8,12 +8,20 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 1em;
+  border: 2px solid gray;
 }
 
 .lomito-text h3 {
   margin-top: 0px;
-  color: white;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.2em 1em;
+  background-color: goldenrod;
+  width: fit-content;
   text-align: center;
+  transform: translateY(-30px);
+  color: white;
 }
 .lomito-text p {
   color: white;

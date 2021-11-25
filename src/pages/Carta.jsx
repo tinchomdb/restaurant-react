@@ -41,13 +41,13 @@ console.log(cervezasLataArtesanal);
 function Carta() {
   let even = false;
   return (
-    <Parallax
-      blur={0}
-      bgImage="img/wood-background.jpg"
-      bgImageAlt="wood"
-      strength={500}
-    >
-      <div className="carta ">
+    <Parallax blur={0} bgImage="" bgImageAlt="wood" strength={500}>
+      <div
+        className="carta "
+        style={{
+          backgroundImage: `url("/img/chalkboard-background.jpg")`,
+        }}
+      >
         <Navbar />
         <div id="home">a</div>
         <div className="carta-section">
@@ -113,7 +113,7 @@ function Carta() {
           <div className="category-wrapper">
             <div className="category container">
               <h3 className="category-title">Cervezas Long Neck</h3>
-              <div className="category-wrapper ">
+              <div className="items-wrapper ">
                 {cervezaLongNeck.map((item, index) => {
                   return <Bebida bebida={item} key={index} />;
                 })}
@@ -123,7 +123,7 @@ function Carta() {
           <div className="category-wrapper">
             <div className="category container">
               <h3 className="category-title">Cerveza Lata</h3>
-              <div className="category-wrapper ">
+              <div className="items-wrapper ">
                 {cervezasLata.map((item, index) => {
                   return <Bebida bebida={item} key={index} />;
                 })}
@@ -133,7 +133,7 @@ function Carta() {
           <div className="category-wrapper">
             <div className="category container">
               <h3 className="category-title">Cerveza Tirada</h3>
-              <div className="category-wrapper ">
+              <div className="items-wrapper ">
                 {cervezasTirada.map((item, index) => {
                   return <Bebida bebida={item} key={index} />;
                 })}
@@ -143,7 +143,7 @@ function Carta() {
           <div className="category-wrapper">
             <div className="category container">
               <h3 className="category-title">Cerveza Artesanal Lata</h3>
-              <div className="category-wrapper ">
+              <div className="items-wrapper ">
                 {cervezasLataArtesanal.map((item, index) => {
                   return <Bebida bebida={item} key={index} />;
                 })}

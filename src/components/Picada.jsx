@@ -4,7 +4,7 @@ import "./Picada.css";
 function Picada({ picada, even }) {
   return (
     <div className="picada-wrapper">
-      <div className="picada container">
+      <div className="picada container" data-aos="flip-up">
         <div
           className="picada-text"
           data-aos={even ? "fade-right" : "fade-left"}

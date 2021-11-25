@@ -21,12 +21,25 @@
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-
+.category {
+  margin-left: 1em;
+  margin-right: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border: 2px solid gray;
+}
 .category-title {
   margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.2em 1em;
+  background-color: goldenrod;
+  width: fit-content;
+  text-align: center;
+  transform: translateY(-30px);
 }
 
-@media (min-width: 400px) {
+@media (min-width: 600px) {
   .items-wrapper {
     display: grid;
     grid-template-columns: 47% 47%;
