@@ -12,31 +12,24 @@ import Bebida from "../components/Bebida";
 const bebidasSinAlcohol = bebidas.filter(
   (bebida) => bebida.category === "Bebidas sin Alcohol"
 );
-console.log(bebidasSinAlcohol);
 
 const cafeteria = bebidas.filter((bebida) => bebida.category === "Cafetería");
-console.log(cafeteria);
 
 const cervezasLitro = bebidas.filter(
   (bebida) => bebida.category === "Cerveza Litro"
 );
-console.log(cervezasLitro);
 
 const cervezaLongNeck = bebidas.filter(
   (bebida) => bebida.category === "Cerveza Long Neck"
 );
-console.log(cervezaLongNeck);
 
 const cervezasLata = bebidas.filter((bebida) => bebida.category === "Lata");
-console.log(cervezasLata);
 
 const cervezasTirada = bebidas.filter((bebida) => bebida.category === "Tirada");
-console.log(cervezasTirada);
 
 const cervezasLataArtesanal = bebidas.filter(
   (bebida) => bebida.category === "Lata Artesanal"
 );
-console.log(cervezasLataArtesanal);
 
 function Carta() {
   let even = false;

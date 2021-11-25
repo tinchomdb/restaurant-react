@@ -2,7 +2,6 @@ import React from "react";
 import "./Section.css";
 
 function Section({ section, even }) {
-  console.log(even);
   return (
     <div className="section-wrapper">
       <div className="section container">
