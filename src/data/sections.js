@@ -5,6 +5,7 @@ const sections = [
     photo: "/img/tradicional.jpg",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaetenetur, eligendi fugit minima quam hic est porro, accusamusperferendis ipsa ad sint doloremque consequatur.",
+    cta: "",
     link: "",
   },
   {
@@ -13,7 +14,8 @@ const sections = [
     photo: "/img/decarnes.jpg",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaetenetur, eligendi fugit minima quam hic est porro, accusamusperferendis ipsa ad sint doloremque consequatur.",
-    link: "",
+    cta: "Ver Carta",
+    link: "/Carta#home",
   },
   {
     title: "Delivery",
@@ -21,6 +23,7 @@ const sections = [
     photo: "/img/lomo_completo.jpg",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaetenetur, eligendi fugit minima quam hic est porro, accusamusperferendis ipsa ad sint doloremque consequatur.",
+    cta: "",
     link: "",
   },
   {
@@ -29,6 +32,7 @@ const sections = [
     photo: "/img/regalo3.jpg",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaetenetur, eligendi fugit minima quam hic est porro, accusamusperferendis ipsa ad sint doloremque consequatur.",
+    cta: "Regalá",
     link: "",
   },
 
@@ -38,6 +42,7 @@ const sections = [
     photo: "/img/picardo.jpg",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaetenetur, eligendi fugit minima quam hic est porro, accusamusperferendis ipsa ad sint doloremque consequatur.",
+    cta: "Reservá",
     link: "",
   },
 ];

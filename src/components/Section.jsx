@@ -1,4 +1,5 @@
 import React from "react";
+import { HashLink } from "react-router-hash-link";
 import "./Section.css";
 
 function Section({ section, even }) {
@@ -12,6 +13,13 @@ function Section({ section, even }) {
           <h4>{section?.subtitle}</h4>
           <h2>{section?.title}</h2>
           <p>{section?.description}</p>
+          {section.cta ? (
+            <HashLink to={section.link}>
+              <button className="cta-btn">{section.cta}</button>
+            </HashLink>
+          ) : (
+            ""
+          )}
         </div>
 
         <img

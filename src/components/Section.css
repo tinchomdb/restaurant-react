@@ -28,6 +28,26 @@
   letter-spacing: 1px;
 }
 
+.cta-btn {
+  background: #ce3232;
+  border-radius: 0;
+  border: 0;
+  color: #f9f9f9;
+  font-size: inherit;
+
+  padding: 10px 25px;
+  transition: 0.5s;
+  margin-right: 0;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.cta-btn:hover {
+  background-color: black;
+}
+
 @media (max-width: 800px) {
   .section {
     display: block;

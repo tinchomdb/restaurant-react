@@ -11,7 +11,7 @@ import "./Contact.css";
 
 function Contact() {
   return (
-    <div id="contact" className="contact container">
+    <div id="contacto" className="contact container">
       <div className="contact-info">
         <div className="map-wrapper" data-aos="fade-right">
           <iframe

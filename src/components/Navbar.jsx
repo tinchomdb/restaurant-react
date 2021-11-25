@@ -39,12 +39,9 @@ function Navbar() {
               Regalos
             </a>
           </li>
-
-          <li>
-            <a href="#contact" className="smoothScroll">
-              Contacto
-            </a>
-          </li>
+          <Link to="/#contacto">
+            <li>Contacto</li>
+          </Link>
           <li id="nav-li-button">
             <a href="#a" className="nav-button">
               Reservar
