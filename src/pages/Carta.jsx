@@ -36,7 +36,7 @@ function Carta() {
   useEffect(() => {
     Aos.init({
       duration: 600,
-      easing: "ease-out",
+      easing: "ease-out-back",
     });
   }, []);
 
