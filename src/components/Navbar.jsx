@@ -11,9 +11,9 @@ function Navbar() {
       <div className="navbar container">
         <div className="navbar-header">
           {/* lOGO TEXT HERE */}
-          <a href="/" className="navbar-brand">
+          <Link to="/#home" className="navbar-brand">
             Picardo <span>.</span> Restaurant
-          </a>
+          </Link>
         </div>
 
         {/* <!-- MENU LINKS --> */}
