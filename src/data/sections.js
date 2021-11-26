@@ -1,4 +1,4 @@
-const sections = [
+export const aboutSections = [
   {
     title: "Haciendo las mejores picadas desde 2011",
     subtitle: "Conoce nuestra historia",
@@ -47,4 +47,25 @@ const sections = [
   },
 ];
 
-export default sections;
+export const deliverySections = [
+  {
+    title: "Disfrutá las mejores picadas y lomos en tu casa!",
+    subtitle: "Pedí por whatsapp",
+    photo: "/img/delivery-pic.webp",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaetenetur, eligendi fugit minima quam hic est porro, accusamusperferendis ipsa ad sint doloremque consequatur.",
+    cta: "Encargá",
+    link: "",
+  },
+  {
+    title: "Disfrutá las mejores picadas y lomos en tu casa!",
+    subtitle: "Pedí por whatsapp",
+    photo: "/img/pedidosya.jpg",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaetenetur, eligendi fugit minima quam hic est porro, accusamusperferendis ipsa ad sint doloremque consequatur.",
+    cta: "Encargá",
+    link: "",
+  },
+];
+
+export default aboutSections;

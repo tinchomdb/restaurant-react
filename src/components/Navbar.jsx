@@ -29,11 +29,9 @@ function Navbar() {
               </span>
             </li>
           </Link>
-          <li>
-            <a href="#a" className="smoothScroll">
-              Delivery
-            </a>
-          </li>
+          <Link to="/delivery#home">
+            <li>Delivery</li>
+          </Link>
           <li>
             <a href="#a" className="smoothScroll">
               Regalos

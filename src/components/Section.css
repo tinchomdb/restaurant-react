@@ -42,6 +42,7 @@
   text-transform: uppercase;
   font-size: 12px;
   font-weight: bold;
+  margin-bottom: 1em;
 }
 
 .cta-btn:hover {
