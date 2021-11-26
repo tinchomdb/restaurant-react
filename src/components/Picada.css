@@ -7,8 +7,6 @@
 
   margin: 2em 1em;
 }
-.picada-wrapper:nth-of-type(2n) {
-}
 
 .picada-wrapper:nth-of-type(2n) .picada {
   flex-direction: row-reverse;
@@ -37,20 +35,6 @@
 }
 .picada p {
   color: white;
-}
-
-.price-item {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  height: 2em;
-}
-.price-item span {
-  width: 120px;
-}
-
-.price-item .price {
-  width: 70px;
 }
 
 @media (max-width: 800px) {

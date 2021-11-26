@@ -1,5 +1,6 @@
 import React from "react";
 import "./Picada.css";
+import PriceItem from "./PriceItem";
 
 function Picada({ picada, even }) {
   return (
@@ -13,41 +14,25 @@ function Picada({ picada, even }) {
           <p>{picada?.description}</p>
           <div className="prices">
             {picada.chica ? (
-              <div className="price-item">
-                <span className="size">Chica</span>
-                <span className="price">${picada.chica}</span>
-                <span>Come 1</span>
-              </div>
+              <PriceItem size="Chica (Come 1)" price={picada.chica} />
             ) : (
               ""
             )}
 
             {picada.mediana ? (
-              <div className="price-item">
-                <span className="size">Mediana</span>
-                <span className="price">${picada.mediana}</span>
-                <span>Comen 2</span>
-              </div>
+              <PriceItem size="Mediana (Comen 2)" price={picada.mediana} />
             ) : (
               ""
             )}
 
             {picada.grande ? (
-              <div className="price-item">
-                <span className="size">Grande</span>
-                <span className="price">${picada.grande}</span>
-                <span>Comen 3</span>
-              </div>
+              <PriceItem size="Grande (Comen 3)" price={picada.grande} />
             ) : (
               ""
             )}
 
             {picada.extra ? (
-              <div className="price-item">
-                <span className="size">Extra Grande</span>
-                <span className="price">${picada.extra}</span>
-                <span>Comen 4</span>
-              </div>
+              <PriceItem size="Extra Grande (Comen 4)" price={picada.extra} />
             ) : (
               ""
             )}

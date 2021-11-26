@@ -1,5 +1,5 @@
 import React from "react";
-import "./Bebida.css";
+import "./Drink.css";
 
 function Bebida({ bebida }) {
   return (

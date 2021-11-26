@@ -28,20 +28,6 @@
   text-align: center;
 }
 
-.price-item {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  height: 2em;
-}
-.price-item span {
-  width: 120px;
-}
-
-.price-item .price {
-  width: 70px;
-}
-
 @media (max-width: 800px) {
   .lomito-wrapper {
     width: 100%;

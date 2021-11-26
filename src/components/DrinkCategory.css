@@ -1,21 +1,3 @@
-.bebida {
-  display: flex;
-  justify-content: space-between;
-}
-
-.dotted-line {
-  border-bottom: 2px dotted white;
-  width: 100%;
-  transform: translateY(-3px);
-}
-
-.bebida-title {
-  flex-shrink: 0;
-}
-
-.category-wrapper:nth-of-type(2n) {
-}
-
 .category-wrapper {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -43,15 +25,5 @@
     display: grid;
     grid-template-columns: 47% 47%;
     column-gap: 6%;
-  }
-
-  .bebidas-sin-alcohol,
-  .cafeteria {
-  }
-
-  .cervezas-litro {
-  }
-
-  .bebida {
   }
 }

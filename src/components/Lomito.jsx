@@ -1,5 +1,6 @@
 import React from "react";
 import "./Lomito.css";
+import PriceItem from "./PriceItem";
 
 function Lomito({ lomito, even }) {
   return (
@@ -8,20 +9,9 @@ function Lomito({ lomito, even }) {
         <h3>{lomito?.title}</h3>
         <p>{lomito?.description}</p>
         <div className="prices">
-          <div className="price-item">
-            <span className="size">20 cm</span>
-            <span className="price">${lomito.chica}</span>
-          </div>
-
-          <div className="price-item">
-            <span className="size">30 cm</span>
-            <span className="price">${lomito.mediana}</span>
-          </div>
-
-          <div className="price-item">
-            <span className="size">50 cm</span>
-            <span className="price">${lomito.grande}</span>
-          </div>
+          <PriceItem size="20 cm" price={lomito.chica} />
+          <PriceItem size="30 cm" price={lomito.mediana} />
+          <PriceItem size="50 cm" price={lomito.grande} />
         </div>
       </div>
     </div>

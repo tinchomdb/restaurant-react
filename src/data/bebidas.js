@@ -211,4 +211,32 @@ const bebidas = [
   },
 ];
 
+export const bebidasSinAlcohol = bebidas.filter(
+  (bebida) => bebida.category === "Bebidas sin Alcohol"
+);
+
+export const cafeteria = bebidas.filter(
+  (bebida) => bebida.category === "Cafetería"
+);
+
+export const cervezasLitro = bebidas.filter(
+  (bebida) => bebida.category === "Cerveza Litro"
+);
+
+export const cervezaLongNeck = bebidas.filter(
+  (bebida) => bebida.category === "Cerveza Long Neck"
+);
+
+export const cervezasLata = bebidas.filter(
+  (bebida) => bebida.category === "Lata"
+);
+
+export const cervezasTirada = bebidas.filter(
+  (bebida) => bebida.category === "Tirada"
+);
+
+export const cervezasLataArtesanal = bebidas.filter(
+  (bebida) => bebida.category === "Lata Artesanal"
+);
+
 export default bebidas;

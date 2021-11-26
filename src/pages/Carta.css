@@ -4,17 +4,3 @@
   background-repeat: repeat-y;
   overflow: hidden;
 }
-
-.carta-section-title {
-  color: white;
-  font-size: 2rem;
-  padding-top: 70px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.lomitos-wrapper {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}

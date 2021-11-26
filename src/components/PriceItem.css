@@ -1,0 +1,15 @@
+.price-item {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 2em;
+}
+
+.price-item .size {
+  flex-shrink: 0;
+}
+
+.price-item .dotted-line {
+  width: 100%;
+  transform: translateY(-17px);
+}

@@ -1,0 +1,14 @@
+.bebida {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dotted-line {
+  border-bottom: 2px dotted white;
+  width: 100%;
+  transform: translateY(-3px);
+}
+
+.bebida-title {
+  flex-shrink: 0;
+}
