@@ -1,3 +1,7 @@
 .margin-top {
   margin-top: 48px;
 }
+
+.delivery {
+  overflow: hidden;
+}
