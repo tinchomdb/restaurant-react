@@ -41,7 +41,10 @@ function Navbar() {
             <li>Contacto</li>
           </Link>
           <li id="nav-li-button">
-            <a href="#a" className="nav-button">
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLScJRF1KuAr37zNhg6Uf8PMg4zMD6STU94YG_hayhhidQw6ynw/viewform"
+              className="nav-button"
+            >
               Reservar
             </a>
           </li>

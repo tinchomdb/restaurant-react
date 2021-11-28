@@ -23,32 +23,46 @@ function Contact() {
         </div>
         <div className="contact-links" data-aos="fade-left">
           <h2 className="contact-title">Contáctanos</h2>
-          <div className="social">
-            <div className="social-item">
-              <WhatsApp />
-              <p>2615358947</p>
-            </div>
-            <div className="social-item">
-              <Instagram />
-              <p>picardobar</p>
-            </div>
-            <div className="social-item">
-              <Facebook />
-              <p>picardo.bar</p>
-            </div>
-            <div className="social-item">
-              <Phone />
-              <p>4203805</p>
-            </div>
-            <div className="social-item">
-              <Bookmark />
-              <p>Reservas</p>
-            </div>
-            <div className="social-item">
+          <ul className="social">
+            <a href="https://api.whatsapp.com/send?phone=542615738257&text=Hola!">
+              <li className="social-item">
+                <WhatsApp />
+                <p>2615358947</p>
+              </li>
+            </a>
+            <a href="https://www.instagram.com/picardobar/">
+              <li className="social-item">
+                <Instagram />
+                <p>picardobar</p>
+              </li>
+            </a>
+            <a href="https://www.facebook.com/picardo.bar/">
+              <li className="social-item">
+                <Facebook />
+                <p>picardo.bar</p>
+              </li>
+            </a>
+            <a href="tel:4203805">
+              <li className="social-item">
+                <Phone />
+                <p>4203805</p>
+              </li>
+            </a>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLScJRF1KuAr37zNhg6Uf8PMg4zMD6STU94YG_hayhhidQw6ynw/viewform"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <li className="social-item">
+                <Bookmark />
+                <p>Reservas</p>
+              </li>
+            </a>
+            <li className="social-item">
               <QueryBuilder />
               <p>Martes a Domingo de 19:00 a 02:00</p>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

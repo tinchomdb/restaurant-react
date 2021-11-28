@@ -24,9 +24,29 @@
 .contact-title {
   margin-top: 0;
 }
+
+.social {
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+}
 .social-item {
   display: flex;
   align-items: center;
+  list-style: none;
+  padding: 0 2em;
+
+  transition: all ease-in-out 0.5s;
+}
+.social a {
+  color: black;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.social a:hover .social-item {
+  background-color: goldenrod;
+  text-decoration: none;
 }
 
 .social-item p {

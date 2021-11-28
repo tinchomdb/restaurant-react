@@ -4,7 +4,7 @@ import "./Section.css";
 
 function Section({ section, even }) {
   return (
-    <div className="section-wrapper">
+    <div className="section-wrapper" id={section.hashId}>
       <div className="section container">
         <div
           className="section-text"
@@ -13,7 +13,11 @@ function Section({ section, even }) {
           <h4>{section?.subtitle}</h4>
           <h2>{section?.title}</h2>
           <p>{section?.description}</p>
-          {section.cta ? (
+          {section.external ? (
+            <a href={section.link} target="_blank" rel="noreferrer">
+              <button className="cta-btn">{section.cta}</button>
+            </a>
+          ) : section.cta ? (
             <HashLink to={section.link}>
               <button className="cta-btn">{section.cta}</button>
             </HashLink>

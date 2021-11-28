@@ -7,6 +7,7 @@ export const aboutSections = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaetenetur, eligendi fugit minima quam hic est porro, accusamusperferendis ipsa ad sint doloremque consequatur.",
     cta: "",
     link: "",
+    hashId: "conocenos",
   },
   {
     title: "Carta",
@@ -23,8 +24,8 @@ export const aboutSections = [
     photo: "/img/lomo_completo.jpg",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaetenetur, eligendi fugit minima quam hic est porro, accusamusperferendis ipsa ad sint doloremque consequatur.",
-    cta: "",
-    link: "",
+    cta: "Encargar",
+    link: "delivery#home",
   },
   {
     title: "Regalos",
@@ -43,7 +44,8 @@ export const aboutSections = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaetenetur, eligendi fugit minima quam hic est porro, accusamusperferendis ipsa ad sint doloremque consequatur.",
     cta: "Reservá",
-    link: "",
+    link: "https://docs.google.com/forms/d/e/1FAIpQLScJRF1KuAr37zNhg6Uf8PMg4zMD6STU94YG_hayhhidQw6ynw/viewform",
+    external: true,
   },
 ];
 
@@ -53,18 +55,19 @@ export const deliverySections = [
     subtitle: "Pedí por whatsapp",
     photo: "/img/delivery-pic.webp",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaetenetur, eligendi fugit minima quam hic est porro, accusamusperferendis ipsa ad sint doloremque consequatur.",
+      "Hacenos tu pedido directamente por whatsapp para acceder al mejor precio",
     cta: "Encargá",
     link: "",
   },
   {
-    title: "Disfrutá las mejores picadas y lomos en tu casa!",
+    title: "Encontranos en PedidosYa",
     subtitle: "Pedí por whatsapp",
     photo: "/img/pedidosya.jpg",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaetenetur, eligendi fugit minima quam hic est porro, accusamusperferendis ipsa ad sint doloremque consequatur.",
+      "Encargá nuestros productos en PedidosYa (platos y rango de envío limitados)",
     cta: "Encargá",
-    link: "",
+    link: "https://www.pedidosya.com.ar/restaurantes/mendoza/picardo-bar-picadas-y-amigos-menu",
+    external: true,
   },
 ];
 
