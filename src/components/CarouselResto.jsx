@@ -9,10 +9,12 @@ const settings = {
   showThumbs: false,
   useKeyboardArrows: true,
   swipeable: false,
-  showIndicators: false,
+  showIndicators: true,
   autoPlay: true,
-  interval: 3000,
+  interval: 5000,
   showStatus: false,
+  animationHandler: "fade",
+  transitionTime: 1000,
 };
 
 function CarouselResto() {
