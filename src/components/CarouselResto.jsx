@@ -1,26 +1,30 @@
 import React from "react";
 import "./CarouselResto.css";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from "react-responsive-carousel";
+
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 import { HashLink as Link } from "react-router-hash-link";
 
-const settings = {
-  infiniteLoop: true,
-  showThumbs: false,
-  useKeyboardArrows: true,
-  swipeable: false,
-  showIndicators: true,
-  autoPlay: true,
-  interval: 5000,
-  showStatus: false,
-  animationHandler: "fade",
-  transitionTime: 1000,
+var settings = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  autoplaySpeed: 3000,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  draggable: true,
+  fade: true,
+  swipeToSlide: true,
+  swipe: true,
+  arrows: true,
 };
 
 function CarouselResto() {
   return (
     <div id="home">
-      <Carousel {...settings} className="carousel-resto">
+      <Slider {...settings} className="carousel-resto">
         <div className="slide">
           <img className="slide-image" src="img/picardo.jpg" alt="" />
           <div className="slide-text">
@@ -39,7 +43,7 @@ function CarouselResto() {
             <Link to="/carta#home">Carta</Link>
           </div>
         </div>
-      </Carousel>
+      </Slider>
     </div>
   );
 }

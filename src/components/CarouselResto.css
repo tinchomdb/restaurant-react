@@ -1,33 +1,29 @@
 .carousel-resto {
-  /* position: absolute; */
-
-  top: 0;
-  z-index: -2;
-}
-
-.carousel-resto .slide {
-  height: 500px;
+  /* z-index: -2; */
 }
 
 .slide-image {
   object-fit: cover !important;
   height: 100% !important;
+  width: 100%;
+}
+
+.carousel-resto .slide {
+  height: 500px;
+  position: relative;
 }
 
 .slide-text {
   color: white;
   position: absolute;
-
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
   padding-left: 0.9rem;
   max-width: 1230px;
-
   top: 150px;
   text-align: left;
-
   text-shadow: 2px 2px 7px rgba(0, 0, 0, 1);
 }
 
@@ -70,3 +66,10 @@
     font-size: 2rem;
   }
 }
+
+/* 
+
+
+
+
+ */
