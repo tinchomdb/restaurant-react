@@ -1,17 +1,24 @@
 import React from "react";
 import "./Testimonials.css";
 import { Parallax } from "react-parallax";
-import { Carousel } from "react-responsive-carousel";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-const settings = {
-  infiniteLoop: true,
-  showThumbs: false,
-  useKeyboardArrows: true,
-  swipeable: false,
-  showIndicators: true,
-  autoPlay: true,
-  interval: 5000,
-  showStatus: false,
+var settings = {
+  autoplay: true,
+  dots: true,
+  infinite: true,
+  speed: 500,
+  autoplaySpeed: 3000,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  draggable: true,
+
+  swipe: true,
+  arrows: false,
+  swipeToSlide: true,
+  fade: true,
 };
 
 function Testimonials() {
@@ -27,7 +34,7 @@ function Testimonials() {
           <h2 className="testimonials-title">
             Comentarios de nuestros clientes
           </h2>
-          <Carousel {...settings}>
+          <Slider {...settings}>
             <p className="testimonial-text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
               debitis sint eius consectetur tempore blanditiis non maiores vel,
@@ -45,7 +52,7 @@ function Testimonials() {
               distinctio officiis impedit molestiae dicta! Repellat, molestiae
               corporis?
             </p>
-          </Carousel>
+          </Slider>
         </div>
       </Parallax>
     </div>

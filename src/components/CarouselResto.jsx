@@ -13,12 +13,8 @@ var settings = {
   infinite: true,
   speed: 500,
   autoplaySpeed: 3000,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  draggable: true,
-
   swipe: true,
-  arrows: true,
+  arrows: false,
   swipeToSlide: true,
   fade: true,
 
