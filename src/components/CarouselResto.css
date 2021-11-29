@@ -2,6 +2,17 @@
   /* z-index: -2; */
 }
 
+/* Fixing fade bug (hidden slide has clickable buttons) */
+.slick-slide .slide {
+  display: none !important;
+}
+
+.slick-active .slide {
+  display: block !important;
+}
+
+/* End of fix */
+
 .slide-image {
   object-fit: cover !important;
   height: 100% !important;

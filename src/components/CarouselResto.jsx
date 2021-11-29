@@ -8,6 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { HashLink as Link } from "react-router-hash-link";
 
 var settings = {
+  autoplay: true,
   dots: true,
   infinite: true,
   speed: 500,
@@ -15,10 +16,15 @@ var settings = {
   slidesToShow: 1,
   slidesToScroll: 1,
   draggable: true,
-  fade: true,
-  swipeToSlide: true,
+
   swipe: true,
   arrows: true,
+  swipeToSlide: true,
+  fade: true,
+
+  /* 
+  
+  */
 };
 
 function CarouselResto() {
