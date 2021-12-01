@@ -23,13 +23,19 @@ export const cartSlice = createSlice({
         (item) => item.id !== action.payload
       );
     },
-    /* incrementByAmount: (state, action) => {
-      state.value += action.payload;
-    }, */
+    increment: (state, action) => {
+      const index = state.cartItems.findIndex((x) => x.id === action.payload);
+      state.cartItems[index].quantity += 1;
+    },
+    decrement: (state, action) => {
+      const index = state.cartItems.findIndex((x) => x.id === action.payload);
+      state.cartItems[index].quantity -= 1;
+    },
   },
 });
 
 // Action creators are generated for each case reducer function
-export const { addItemToCart, removeItemFromCart } = cartSlice.actions;
+export const { addItemToCart, removeItemFromCart, increment, decrement } =
+  cartSlice.actions;
 
 export default cartSlice.reducer;

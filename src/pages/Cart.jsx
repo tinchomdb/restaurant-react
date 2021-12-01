@@ -4,7 +4,7 @@ import "./Cart.css";
 import cartItems from "../data/cartItems";
 import { useDispatch, useSelector } from "react-redux";
 import { DeleteForever } from "@mui/icons-material";
-import { removeItemFromCart } from "../store/cartSlice";
+import { removeItemFromCart, decrement, increment } from "../store/cartSlice";
 
 function Cart({ onClose }) {
   const items = useSelector((state) => state.cart.cartItems);
@@ -28,9 +28,9 @@ function Cart({ onClose }) {
             <span className="cart-item-title">{item.title}</span>
             <span className="cart-item-price">${item.price}</span>
             <div className="cart-item-quantity-group">
-              <button>-</button>
+              <button onClick={() => dispatch(decrement(item.id))}>-</button>
               <span className="cart-item-quantity">{item.quantity}</span>
-              <button>+</button>
+              <button onClick={() => dispatch(increment(item.id))}>+</button>
             </div>
             <span className="cart-item-subtotal">
               ${item.price * item.quantity}
