@@ -1,5 +1,6 @@
 const picadas = [
   {
+    id: 1,
     title: "Tradicional",
     photo: "/img/tradicional.jpg",
     description:
@@ -10,6 +11,7 @@ const picadas = [
     showInGallery: true,
   },
   {
+    id: 2,
     title: "De Campo",
     photo: "/img/decampo.jpg",
     description:
@@ -20,6 +22,7 @@ const picadas = [
     showInGallery: true,
   },
   {
+    id: 3,
     title: "De Carnes",
     photo: "/img/decarnes.jpg",
     description:
@@ -30,6 +33,7 @@ const picadas = [
     showInGallery: true,
   },
   {
+    id: 4,
     title: "Caliente",
     photo: "/img/caliente.jpg",
     description:
@@ -40,6 +44,7 @@ const picadas = [
     showInGallery: true,
   },
   {
+    id: 5,
     title: "De Tacos",
     photo: "/img/detacos.jpg",
     description:
@@ -50,6 +55,7 @@ const picadas = [
     showInGallery: true,
   },
   {
+    id: 6,
     title: "Fondue",
     photo: "/img/fondue.jpg",
     description:
@@ -60,6 +66,7 @@ const picadas = [
     showInGallery: true,
   },
   {
+    id: 7,
     title: "Onda Verde",
     photo: "/img/ondaverde.jpg",
     description:
@@ -70,6 +77,7 @@ const picadas = [
     showInGallery: true,
   },
   {
+    id: 8,
     title: "Especial Picardo",
     photo: "/img/especialpicardo.jpg",
     description:
@@ -78,14 +86,25 @@ const picadas = [
     showInGallery: true,
   },
   {
-    title: "De regalo",
+    id: 9,
+    title: "De regalo chica",
     photo: "/img/regalo1.jpg",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repellat accusantium corporis nulla magni. Inventore dignissimos harum reprehenderit veniam quo?",
-    chica: 10,
-    mediana: 20,
-    grande: 30,
+    price: 2000,
     showInGallery: true,
+    category: ["regalos"],
+  },
+
+  {
+    id: 10,
+    title: "De regalo mediana",
+    photo: "/img/regalo2.jpg",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repellat accusantium corporis nulla magni. Inventore dignissimos harum reprehenderit veniam quo?",
+    price: 4000,
+    showInGallery: true,
+    category: ["regalos"],
   },
 ];
 

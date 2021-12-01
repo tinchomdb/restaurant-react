@@ -1,5 +1,6 @@
 import React from "react";
 import "./Picadas.css";
+
 import Picada from "../components/Picada";
 import picadas from "../data/picadas";
 

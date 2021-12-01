@@ -33,11 +33,10 @@
   font-weight: 300;
 }
 
-.slick-dots li button::before {
+.testimonials .slick-dots li button::before {
   color: white !important;
-  opacity: 0.5;
 }
 
-/* .slick-dots li.slick-active {
+.slick-dots li.slick-active {
   opacity: 1 !important;
-} */
+}

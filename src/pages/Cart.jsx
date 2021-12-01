@@ -1,0 +1,59 @@
+import React, { useState } from "react";
+import ReactDOM from "react-dom";
+import "./Cart.css";
+import cartItems from "../data/cartItems";
+import { useDispatch, useSelector } from "react-redux";
+import { DeleteForever } from "@mui/icons-material";
+import { removeItemFromCart } from "../store/cartSlice";
+
+function Cart({ onClose }) {
+  const items = useSelector((state) => state.cart.cartItems);
+
+  const dispatch = useDispatch();
+
+  return ReactDOM.createPortal(
+    <>
+      <div className="cart-overlay" onClick={onClose}></div>
+      <div className="cart">
+        <h4>Su Pedido</h4>
+        <div className="cart-table">
+          <span className="table-title">Nombre</span>
+          <span className="table-title">Precio:</span>
+          <span className="table-title">Cantidad:</span>
+          <span className="table-title">Subotal:</span>
+          <span className="table-title">Eliminar</span>
+        </div>
+        {items.map((item, index) => (
+          <div className="cart-item" key={index}>
+            <span className="cart-item-title">{item.title}</span>
+            <span className="cart-item-price">${item.price}</span>
+            <div className="cart-item-quantity-group">
+              <button>-</button>
+              <span className="cart-item-quantity">{item.quantity}</span>
+              <button>+</button>
+            </div>
+            <span className="cart-item-subtotal">
+              ${item.price * item.quantity}
+            </span>
+            <div
+              onClick={() => {
+                dispatch(removeItemFromCart(item.id));
+              }}
+            >
+              <DeleteForever />
+            </div>
+          </div>
+        ))}
+
+        <h4 className="cart-total">Total</h4>
+        <span>
+          {items.reduce((prev, curr) => prev + curr.price * curr.quantity, 0)}
+        </span>
+        <button onClick={onClose}>Cerrar</button>
+      </div>
+    </>,
+    document.getElementById("portal")
+  );
+}
+
+export default Cart;
