@@ -63,6 +63,7 @@ function Picada({ picada, even }) {
           {picada.category?.includes("regalos") && (
             <form onSubmit={onSubmitHandler}>
               <input
+                className="picada-input"
                 onChange={(e) => setQuantity(+e.target.value)}
                 id="amount"
                 type="number"

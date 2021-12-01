@@ -1,9 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./Cart.css";
+import Button from "../components/Button";
 
 import { useDispatch, useSelector } from "react-redux";
-import { DeleteForever } from "@mui/icons-material";
+import { Add, Close, DeleteForever, Remove } from "@mui/icons-material";
 import { removeItemFromCart, decrement, increment } from "../store/cartSlice";
 
 function Cart({ onClose }) {
@@ -15,43 +16,60 @@ function Cart({ onClose }) {
     <>
       <div className="cart-overlay" onClick={onClose}></div>
       <div className="cart">
-        <h4>Su Pedido</h4>
-        <div className="cart-table-header">
-          <span className="table-title">Producto</span>
+        <div className="cart-list">
+          <h4>Su Pedido</h4>
 
-          <span className="table-title">Cantidad:</span>
-          <span className="table-title">Subotal:</span>
-          <span className="table-title">Eliminar</span>
+          {items.map((item, index) => (
+            <div className="cart-item" key={index}>
+              <div className="left-col">
+                <img src={item.photo} alt="" className="item-photo" />
+                <div
+                  className="delete"
+                  onClick={() => {
+                    dispatch(removeItemFromCart(item.id));
+                  }}
+                >
+                  Eliminar <DeleteForever />
+                </div>
+              </div>
+
+              <div className="item-info">
+                <span className="cart-item-title">{item.title}</span>
+                <span className="cart-item-price">${item.price}</span>
+                <div className="cart-item-quantity-group">
+                  <Remove onClick={() => dispatch(decrement(item.id))} />
+                  <span className="cart-item-quantity">{item.quantity}</span>
+                  <Add onClick={() => dispatch(increment(item.id))} />
+                </div>
+              </div>
+              <span className="cart-item-subtotal">
+                ${item.price * item.quantity}
+              </span>
+            </div>
+          ))}
         </div>
-        {items.map((item, index) => (
-          <div className="cart-item" key={index}>
-            <div>
-              <span className="cart-item-title">{item.title}</span>
-              <p className="cart-item-price">${item.price}</p>
-            </div>
-            <div className="cart-item-quantity-group">
-              <button onClick={() => dispatch(decrement(item.id))}>-</button>
-              <span className="cart-item-quantity">{item.quantity}</span>
-              <button onClick={() => dispatch(increment(item.id))}>+</button>
-            </div>
-            <span className="cart-item-subtotal">
-              ${item.price * item.quantity}
+        <div className="summary">
+          <h4>Resumen</h4>
+          <div className="summary-item">
+            <span className="summary-item-title">Subtotal</span>
+            <span className="summary-item-total">
+              $
+              {items.reduce(
+                (prev, curr) => prev + curr.price * curr.quantity,
+                0
+              )}
             </span>
-            <div
-              onClick={() => {
-                dispatch(removeItemFromCart(item.id));
-              }}
-            >
-              <DeleteForever />
-            </div>
           </div>
-        ))}
+          <div className="summary-item">
+            <span className="summary-item-title">Envío</span>
+            <span className="summary-item-total">$200</span>
+          </div>
+          <div className="cart-close" onClick={onClose}>
+            <Close />
+          </div>
 
-        <h4 className="cart-total">Total</h4>
-        <span>
-          {items.reduce((prev, curr) => prev + curr.price * curr.quantity, 0)}
-        </span>
-        <button onClick={onClose}>Cerrar</button>
+          <Button onClick={onClose}>Continuar Compra</Button>
+        </div>
       </div>
     </>,
     document.getElementById("portal")

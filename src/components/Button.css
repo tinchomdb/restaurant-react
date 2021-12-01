@@ -13,8 +13,12 @@
   font-size: 12px;
   font-weight: bold;
   margin-bottom: 1em;
+  -webkit-box-shadow: 0px 7px 16px -3px rgba(218, 165, 32, 0.41);
+  box-shadow: 0px 7px 16px -3px rgba(218, 165, 32, 0.41);
 }
 
 .cta-btn:hover {
   background-color: black;
+  -webkit-box-shadow: 0px 7px 16px -3px rgba(0, 0, 0, 0.41);
+  box-shadow: 0px 7px 16px -3px rgba(0, 0, 0, 0.41);
 }

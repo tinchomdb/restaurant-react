@@ -34,7 +34,7 @@ export const aboutSections = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaetenetur, eligendi fugit minima quam hic est porro, accusamusperferendis ipsa ad sint doloremque consequatur.",
     cta: "Regalá",
-    link: "",
+    link: "/regalos#home",
   },
 
   {

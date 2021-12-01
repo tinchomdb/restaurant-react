@@ -40,9 +40,18 @@ function CarouselResto() {
           <img className="slide-image" src="img/decarnes.jpg" alt="" />
           <div className="slide-text">
             <h3 className="slide-title">Conocé nuestra carta</h3>
-            <h1>Todas nuestros plato y bebidas del restaurant</h1>
+            <h1>Todos nuestros plato y bebidas del restaurant</h1>
 
             <Link to="/carta#home">Carta</Link>
+          </div>
+        </div>
+        <div className="slide">
+          <img className="slide-image" src="img/regalo2.jpg" alt="" />
+          <div className="slide-text">
+            <h3 className="slide-title">Regalá Felicidad</h3>
+            <h1>Las Mejores Picadas de Mendoza</h1>
+
+            <Link to="/regalos#home">Regalá</Link>
           </div>
         </div>
       </Slider>

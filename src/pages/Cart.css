@@ -7,6 +7,30 @@
   background-color: white;
   min-width: 700px;
   padding: 1em;
+  display: flex;
+  justify-content: stretch;
+  transition: all 0.5s;
+}
+
+.cart-close {
+  position: fixed;
+  top: -20px;
+  right: -20px;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  padding: 1.5em;
+
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-close svg {
+  font-size: 2rem;
 }
 
 .cart-overlay {
@@ -19,33 +43,109 @@
   z-index: 40;
 }
 
-.cart h4,
-.cart h3 {
-  color: black;
+.cart-list {
+  padding-bottom: 1em;
+  padding-right: 1em;
 }
 
-.cart-table-header {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr 0.5fr;
-
-  grid-column-gap: 50px;
-  border-bottom: 1px solid black;
-  padding-bottom: 1em;
+.cart-list h4 {
+  padding: 1em;
+  margin-top: 0;
+  color: black;
+  background-color: goldenrod;
 }
 
 .cart-item {
-  margin: 1em 0;
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 0.5fr;
+  grid-template-columns: 1fr 2fr 0fr;
+  column-gap: 2em;
+  border-bottom: 1px solid gray;
+  padding: 1em 0;
+}
 
-  grid-column-gap: 50px;
-  border-bottom: 1px solid black;
+.cart img {
+  width: 100px;
+  height: auto;
+}
+
+.cart .delete {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background-color: lightgray;
+  padding: 0.3em;
+}
+.left-col {
+  width: 100%;
+}
+.item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart-item-title {
+  text-align: center;
+}
+
+.cart-item-subtotal,
+.summary-item {
+  font-weight: 600;
 }
 
 .cart-item-quantity {
-  display: inline-block;
   border: 1px solid black;
   width: 30px;
   text-align: center;
-  margin: 0 1em;
+  margin: 0 0.5em;
+}
+
+.cart-item-quantity-group {
+  display: flex;
+  align-items: center;
+}
+
+.summary {
+  width: 33%;
+  padding: 1em;
+  padding-top: 0;
+  background-color: rgb(37, 37, 37);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.summary h4 {
+  padding: 1em;
+  padding-left: 0;
+  margin: 0;
+}
+.summary {
+  color: white;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 2em;
+}
+
+.summary-item-title {
+  margin-right: 2em;
+}
+
+@media (max-width: 730px) {
+  .cart {
+    flex-direction: column;
+    min-width: 350px;
+  }
+  .summary {
+    width: 100%;
+  }
+  .cart-list {
+    padding-right: 0;
+  }
 }
