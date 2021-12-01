@@ -29,7 +29,9 @@ export const cartSlice = createSlice({
     },
     decrement: (state, action) => {
       const index = state.cartItems.findIndex((x) => x.id === action.payload);
-      state.cartItems[index].quantity -= 1;
+      if (state.cartItems[index].quantity > 0) {
+        state.cartItems[index].quantity -= 1;
+      }
     },
   },
 });

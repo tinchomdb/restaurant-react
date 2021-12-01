@@ -24,19 +24,22 @@
   color: black;
 }
 
-.cart-table {
+.cart-table-header {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr 0.5fr;
+  grid-template-columns: 2fr 1fr 1fr 0.5fr;
 
   grid-column-gap: 50px;
+  border-bottom: 1px solid black;
+  padding-bottom: 1em;
 }
 
 .cart-item {
   margin: 1em 0;
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr 0.5fr;
+  grid-template-columns: 2fr 1fr 1fr 0.5fr;
 
   grid-column-gap: 50px;
+  border-bottom: 1px solid black;
 }
 
 .cart-item-quantity {

@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import ReactDOM from "react-dom";
 import "./Cart.css";
-import cartItems from "../data/cartItems";
+
 import { useDispatch, useSelector } from "react-redux";
 import { DeleteForever } from "@mui/icons-material";
 import { removeItemFromCart, decrement, increment } from "../store/cartSlice";
@@ -16,17 +16,19 @@ function Cart({ onClose }) {
       <div className="cart-overlay" onClick={onClose}></div>
       <div className="cart">
         <h4>Su Pedido</h4>
-        <div className="cart-table">
-          <span className="table-title">Nombre</span>
-          <span className="table-title">Precio:</span>
+        <div className="cart-table-header">
+          <span className="table-title">Producto</span>
+
           <span className="table-title">Cantidad:</span>
           <span className="table-title">Subotal:</span>
           <span className="table-title">Eliminar</span>
         </div>
         {items.map((item, index) => (
           <div className="cart-item" key={index}>
-            <span className="cart-item-title">{item.title}</span>
-            <span className="cart-item-price">${item.price}</span>
+            <div>
+              <span className="cart-item-title">{item.title}</span>
+              <p className="cart-item-price">${item.price}</p>
+            </div>
             <div className="cart-item-quantity-group">
               <button onClick={() => dispatch(decrement(item.id))}>-</button>
               <span className="cart-item-quantity">{item.quantity}</span>

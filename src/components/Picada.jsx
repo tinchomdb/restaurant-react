@@ -4,13 +4,34 @@ import PriceItem from "./PriceItem";
 import Button from "./Button";
 import { useDispatch } from "react-redux";
 import { addItemToCart } from "../store/cartSlice";
+import Popup from "./Popup";
 
 function Picada({ picada, even }) {
   const [quantity, setQuantity] = useState(1);
+  const [quantityHelp, setQuantityHelp] = useState(1);
+  const [showPopup, setShowPopup] = useState(false);
   const dispatch = useDispatch();
+
+  const showPopupHandler = () => {
+    setShowPopup(true);
+    const timer = setTimeout(() => {
+      setShowPopup(false);
+      clearTimeout(timer);
+    }, 3000);
+  };
+
+  const onSubmitHandler = (e) => {
+    e.preventDefault();
+    setQuantityHelp(quantity, showPopupHandler());
+
+    dispatch(addItemToCart({ ...picada, quantity }));
+  };
 
   return (
     <div className="picada-wrapper">
+      {showPopup && (
+        <Popup text={`Se agregó al carrito ${quantityHelp} producto/s`} />
+      )}
       <div className="picada container" data-aos="flip-up">
         <div
           className="picada-text"
@@ -40,21 +61,17 @@ function Picada({ picada, even }) {
             )}
           </div>
           {picada.category?.includes("regalos") && (
-            <>
+            <form onSubmit={onSubmitHandler}>
               <input
-                onChange={(e) => setQuantity(parseInt(e.target.value))}
+                onChange={(e) => setQuantity(+e.target.value)}
                 id="amount"
                 type="number"
                 min="1"
                 step="1"
                 defaultValue="1"
               />
-              <Button
-                onClick={() => dispatch(addItemToCart({ ...picada, quantity }))}
-              >
-                Encargá
-              </Button>
-            </>
+              <Button>Encargá</Button>
+            </form>
           )}
         </div>
 
