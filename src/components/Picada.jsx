@@ -56,8 +56,8 @@ function Picada({ picada, even }) {
               <PriceItem size="Extra Grande (Comen 4)" price={picada.extra} />
             )}
 
-            {picada.precio && (
-              <PriceItem size="Extra Grande (Comen 4)" price={picada.price} />
+            {picada.price && (
+              <PriceItem size={picada?.title} price={picada.price} />
             )}
           </div>
           {picada.category?.includes("regalos") && (

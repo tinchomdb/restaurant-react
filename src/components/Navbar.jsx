@@ -1,9 +1,9 @@
-import { Close, Menu, ShoppingCart } from "@mui/icons-material";
 import React, { useState } from "react";
 import "./Navbar.css";
+import { Close, Menu, ShoppingCart } from "@mui/icons-material";
 import { HashLink as Link } from "react-router-hash-link";
-import Cart from "../pages/Cart";
 import { useSelector } from "react-redux";
+import Cart from "../pages/Cart";
 
 function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -12,26 +12,18 @@ function Navbar() {
 
   return (
     <section className="navbar-wrapper">
-      <div className="navbar container">
+      <nav className="navbar container">
         <div className="navbar-header">
-          {/* lOGO TEXT HERE */}
           <Link to="/#home" className="navbar-brand">
             Picardo <span>.</span> Restaurant
           </Link>
         </div>
-
-        {/* <!-- MENU LINKS --> */}
-
         <ul className={toggleMenu ? "navbar-links active" : "navbar-links"}>
           <Link to="/#home">
             <li>Inicio</li>
           </Link>
           <Link to="/carta#home">
-            <li>
-              <span href="#menu" className="smoothScroll">
-                Carta
-              </span>
-            </li>
+            <li>Carta</li>
           </Link>
           <Link to="/delivery#home">
             <li>Delivery</li>
@@ -67,7 +59,7 @@ function Navbar() {
         >
           {toggleMenu ? <Close /> : <Menu />}
         </div>
-      </div>
+      </nav>
     </section>
   );
 }

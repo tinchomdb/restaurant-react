@@ -88,7 +88,7 @@ const picadas = [
   {
     id: 9,
     title: "De regalo chica",
-    photo: "/img/regalo1.jpg",
+    photo: "/img/regalo5.jpg",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repellat accusantium corporis nulla magni. Inventore dignissimos harum reprehenderit veniam quo?",
     price: 2000,
