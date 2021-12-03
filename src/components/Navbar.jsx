@@ -45,19 +45,22 @@ function Navbar() {
             </a>
           </li>
         </ul>
-        <div className="cart-button" onClick={() => setCartIsOpen(true)}>
-          <ShoppingCart />
-          <span className="cart-badge">
-            {items.reduce((prev, curr) => prev + curr.quantity, 0)}
-          </span>
-        </div>
+
         {cartIsOpen && <Cart onClose={() => setCartIsOpen(false)} />}
 
-        <div
-          className="toggle-button"
-          onClick={() => setToggleMenu(!toggleMenu)}
-        >
-          {toggleMenu ? <Close /> : <Menu />}
+        <div className="options-container">
+          <div className="cart-button" onClick={() => setCartIsOpen(true)}>
+            <ShoppingCart />
+            <span className="cart-badge">
+              {items.reduce((prev, curr) => prev + curr.quantity, 0)}
+            </span>
+          </div>
+          <div
+            className="toggle-button"
+            onClick={() => setToggleMenu(!toggleMenu)}
+          >
+            {toggleMenu ? <Close /> : <Menu />}
+          </div>
         </div>
       </nav>
     </section>

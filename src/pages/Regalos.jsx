@@ -26,7 +26,7 @@ function Regalos() {
       <div id="home" className="container">
         <Navbar />
         <div className="carta-section">
-          <h2 className="carta-section-title container">Picadas</h2>
+          <h2 className="carta-section-title container">Regalos</h2>
           {picadasRegalo?.map((item, index) => {
             if (index % 2 === 0) {
               even = true;

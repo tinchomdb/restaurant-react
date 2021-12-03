@@ -67,8 +67,13 @@
   background-color: black;
 }
 
+.options-container {
+  display: flex;
+}
+
 .toggle-button {
   display: none;
+  margin-left: 30px;
 }
 
 .cart-button {
