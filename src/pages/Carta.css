@@ -3,4 +3,5 @@
   background-size: 100%;
   background-repeat: repeat-y;
   overflow: hidden;
+  min-height: 100vh;
 }

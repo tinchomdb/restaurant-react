@@ -1,14 +1,34 @@
 import Aos from "aos";
-import React, { useEffect } from "react";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import Picada from "../components/Picada";
 import picadas from "../data/picadas";
 
 const picadasRegalo = picadas.filter((picada) =>
-  picada.category?.includes("regalos")
+  picada.categories?.includes("regalos")
 );
 
 function Regalos() {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    async function fetchData() {
+      const request = await axios.get(
+        "https://picardo-api.herokuapp.com/api/products"
+      );
+
+      const filteredProducts = request.data.filter((picada) =>
+        picada.categories?.includes("regalos")
+      );
+
+      setProducts(filteredProducts);
+
+      return request;
+    }
+    fetchData();
+  }, []);
+
   useEffect(() => {
     Aos.init({
       duration: 600,
@@ -27,7 +47,7 @@ function Regalos() {
         <Navbar />
         <div className="carta-section">
           <h2 className="carta-section-title container">Regalos</h2>
-          {picadasRegalo?.map((item, index) => {
+          {products?.map((item, index) => {
             if (index % 2 === 0) {
               even = true;
             } else {

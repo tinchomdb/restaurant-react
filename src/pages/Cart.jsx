@@ -9,6 +9,7 @@ import { removeItemFromCart, decrement, increment } from "../store/cartSlice";
 
 function Cart({ onClose }) {
   const items = useSelector((state) => state.cart.cartItems);
+  console.log("items", items);
 
   const dispatch = useDispatch();
   const subtotal = items.reduce(
@@ -25,15 +26,16 @@ function Cart({ onClose }) {
       <div className="cart">
         <div className="cart-list">
           <h4>Su Pedido</h4>
+          {console.log("item0", items[0])}
           {items.length > 0
             ? items.map((item, index) => (
                 <div className="cart-item" key={index}>
                   <div className="left-col">
-                    <img src={item.photo} alt="" className="item-photo" />
+                    <img src={item.img} alt="" className="item-photo" />
                     <div
                       className="delete"
                       onClick={() => {
-                        dispatch(removeItemFromCart(item.id));
+                        dispatch(removeItemFromCart(item._id));
                       }}
                     >
                       Eliminar <DeleteForever />
@@ -44,11 +46,11 @@ function Cart({ onClose }) {
                     <span className="cart-item-title">{item.title}</span>
                     <span className="cart-item-price">${item.price}</span>
                     <div className="cart-item-quantity-group">
-                      <Remove onClick={() => dispatch(decrement(item.id))} />
+                      <Remove onClick={() => dispatch(decrement(item._id))} />
                       <span className="cart-item-quantity">
                         {item.quantity}
                       </span>
-                      <Add onClick={() => dispatch(increment(item.id))} />
+                      <Add onClick={() => dispatch(increment(item._id))} />
                     </div>
                   </div>
                   <span className="cart-item-subtotal">

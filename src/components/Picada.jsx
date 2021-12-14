@@ -40,27 +40,23 @@ function Picada({ picada, even }) {
           <h3>{picada?.title}</h3>
           <p>{picada?.description}</p>
           <div className="prices">
-            {picada.chica && (
-              <PriceItem size="Chica (Come 1)" price={picada.chica} />
+            {picada.size1 && (
+              <PriceItem size={picada.size1} price={picada.price1} />
             )}
 
-            {picada.mediana && (
-              <PriceItem size="Mediana (Comen 2)" price={picada.mediana} />
+            {picada.size2 && (
+              <PriceItem size={picada.size2} price={picada.price2} />
             )}
 
-            {picada.grande && (
-              <PriceItem size="Grande (Comen 3)" price={picada.grande} />
-            )}
-
-            {picada.extra && (
-              <PriceItem size="Extra Grande (Comen 4)" price={picada.extra} />
+            {picada.size3 && (
+              <PriceItem size={picada.size3} price={picada.price3} />
             )}
 
             {picada.price && (
               <PriceItem size={picada?.title} price={picada.price} />
             )}
           </div>
-          {picada.category?.includes("regalos") && (
+          {picada.categories?.includes("regalos") && (
             <form onSubmit={onSubmitHandler}>
               <input
                 className="picada-input"
@@ -78,7 +74,7 @@ function Picada({ picada, even }) {
 
         <img
           className="picada-image"
-          src={picada?.photo}
+          src={picada?.img}
           alt=""
           data-aos={even ? "fade-left" : "fade-right"}
         />
