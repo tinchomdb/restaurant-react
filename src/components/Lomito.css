@@ -22,6 +22,7 @@
   text-align: center;
   transform: translateY(-30px);
   color: white;
+  text-transform: capitalize;
 }
 .lomito-text p {
   color: white;

@@ -1,15 +1,16 @@
 import React from "react";
 import "./Lomitos.css";
 import Lomito from "../components/Lomito";
-import lomitos from "../data/lomitos";
 
-function Lomitos() {
+function Lomitos({ lomitos }) {
+  const sortedLomitos = lomitos.sort((a, b) => a.order - b.order);
+
   let even = false;
   return (
     <div className="carta-section container">
       <h2 className="carta-section-title ">Sandwichs</h2>
       <div className="lomitos-wrapper ">
-        {lomitos.map((item, index) => {
+        {sortedLomitos.map((item, index) => {
           if (index % 2 === 0) {
             even = true;
           } else {

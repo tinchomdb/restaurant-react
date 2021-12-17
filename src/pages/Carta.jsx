@@ -1,16 +1,32 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./Carta.css";
 import Navbar from "../components/Navbar";
 import Dishes from "../components/Dishes";
 import Drinks from "../components/Drinks";
 import Aos from "aos";
+import axios from "axios";
 
 function Carta() {
+  const [products, setProducts] = useState([]);
+
   useEffect(() => {
     Aos.init({
       duration: 600,
       easing: "ease-out-back",
     });
+  }, []);
+
+  useEffect(() => {
+    async function fetchData() {
+      const request = await axios.get(
+        "https://picardo-api.herokuapp.com/api/products"
+      );
+
+      setProducts(request.data);
+
+      return request;
+    }
+    fetchData();
   }, []);
 
   return (
@@ -22,8 +38,8 @@ function Carta() {
     >
       <div id="home" className="container">
         <Navbar />
-        <Dishes />
-        <Drinks />
+        <Dishes products={products} />
+        <Drinks products={products} />
       </div>
     </div>
   );

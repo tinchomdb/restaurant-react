@@ -7,6 +7,7 @@
 
 .price-item .size {
   flex-shrink: 0;
+  text-transform: capitalize;
 }
 
 .price-item .dotted-line {

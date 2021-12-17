@@ -9,9 +9,21 @@ function Lomito({ lomito, even }) {
         <h3>{lomito?.title}</h3>
         <p>{lomito?.description}</p>
         <div className="prices">
-          <PriceItem size="20 cm" price={lomito.chica} />
-          <PriceItem size="30 cm" price={lomito.mediana} />
-          <PriceItem size="50 cm" price={lomito.grande} />
+          {lomito.size1 && (
+            <PriceItem size={lomito.size1} price={lomito.price1} />
+          )}
+
+          {lomito.size2 && (
+            <PriceItem size={lomito.size2} price={lomito.price2} />
+          )}
+
+          {lomito.size3 && (
+            <PriceItem size={lomito.size3} price={lomito.price3} />
+          )}
+
+          {lomito.price && (
+            <PriceItem size={lomito?.title} price={lomito.price} />
+          )}
         </div>
       </div>
     </div>

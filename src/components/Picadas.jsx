@@ -1,35 +1,16 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./Picadas.css";
 
 import Picada from "../components/Picada";
-import picadas from "../data/picadas";
-import axios from "axios";
 
-function Picadas() {
-  const [products, setProducts] = useState([]);
-
-  useEffect(() => {
-    async function fetchData() {
-      const request = await axios.get(
-        "https://picardo-api.herokuapp.com/api/products"
-      );
-      const filteredProducts = request.data.filter((picada) =>
-        picada.categories?.includes("picadas")
-      );
-      setProducts(filteredProducts);
-
-      return request;
-    }
-    fetchData();
-  }, []);
-
-  console.log(products);
+function Picadas({ picadas }) {
+  const sortedPicadas = picadas.sort((a, b) => a.order - b.order);
 
   let even = false;
   return (
     <div className="carta-section">
       <h2 className="carta-section-title container">Picadas</h2>
-      {products?.map((item, index) => {
+      {sortedPicadas?.map((item, index) => {
         if (index % 2 === 0) {
           even = true;
         } else {
