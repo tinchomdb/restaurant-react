@@ -23,37 +23,33 @@ var settings = {
   */
 };
 
-function CarouselResto() {
+function CarouselResto({ sections }) {
+  const filteredSections = sections.filter((section) =>
+    section.category?.includes("carrusel")
+  );
+
   return (
     <div id="home">
       <Slider {...settings} className="carousel-resto">
-        <div className="slide">
-          <img className="slide-image" src="img/picardo.jpg" alt="" />
-          <div className="slide-text">
-            <h3 className="slide-title">Conocé Picardo</h3>
-            <h1>Las Mejores Picadas de Mendoza</h1>
+        {filteredSections.map((section, index) => (
+          <div className="slide" key={index}>
+            <img className="slide-image" src={section.img} alt="" />
+            <div className="slide-text">
+              <h3 className="slide-title">{section.subtitle}</h3>
+              <h1>{section.title}</h1>
 
-            <Link to="/#conocenos">Conocenos</Link>
+              {!section.isInterno && section.linkText && section.url ? (
+                <a href={section.url} target="_blank" rel="noreferrer">
+                  {section.linkText}
+                </a>
+              ) : section.linkText && section.url ? (
+                <Link to={section.url}>{section.linkText}</Link>
+              ) : (
+                ""
+              )}
+            </div>
           </div>
-        </div>
-        <div className="slide">
-          <img className="slide-image" src="img/decarnes.jpg" alt="" />
-          <div className="slide-text">
-            <h3 className="slide-title">Conocé nuestra carta</h3>
-            <h1>Todos nuestros plato y bebidas del restaurant</h1>
-
-            <Link to="/carta#home">Carta</Link>
-          </div>
-        </div>
-        <div className="slide">
-          <img className="slide-image" src="img/regalo2.jpg" alt="" />
-          <div className="slide-text">
-            <h3 className="slide-title">Regalá Felicidad</h3>
-            <h1>Las Mejores Picadas de Mendoza</h1>
-
-            <Link to="/regalos#home">Regalá</Link>
-          </div>
-        </div>
+        ))}
       </Slider>
     </div>
   );

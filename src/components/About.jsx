@@ -1,13 +1,17 @@
 import React from "react";
 import "./About.css";
-import sections from "../data/sections";
 import Section from "./Section";
 
-function About() {
+function About({ sections }) {
   let even = false;
+
+  const filteredSections = sections.filter((section) =>
+    section.category?.includes("principal")
+  );
+
   return (
     <div className="about-wrapper">
-      {sections.map((item, index) => {
+      {filteredSections?.map((item, index) => {
         if (index % 2 === 0) {
           even = true;
         } else {

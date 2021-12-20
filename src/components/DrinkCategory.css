@@ -20,7 +20,11 @@
   transform: translateY(-30px);
 }
 
-@media (min-width: 600px) {
+.items-wrapper {
+  font-size: 0.85rem;
+}
+
+@media (min-width: 780px) {
   .items-wrapper {
     display: grid;
     grid-template-columns: 47% 47%;

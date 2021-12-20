@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import About from "../components/About";
 import CarouselResto from "../components/CarouselResto";
 import Contact from "../components/Contact";
@@ -6,22 +6,17 @@ import Gallery from "../components/Gallery";
 import Navbar from "../components/Navbar";
 import Testimonials from "../components/Testimonials";
 import "./Home.css";
-import Aos from "aos";
 import "aos/dist/aos.css";
+import { useSelector } from "react-redux";
 
 function Home() {
-  useEffect(() => {
-    Aos.init({
-      duration: 600,
-      easing: "ease-out-back",
-    });
-  }, []);
+  const storeSections = useSelector((state) => state.sections.sectionsItems);
 
   return (
     <div className="home">
       <Navbar />
-      <CarouselResto id="home" />
-      <About />
+      <CarouselResto id="home" sections={storeSections} />
+      <About sections={storeSections} />
       <Gallery />
       <Testimonials />
       <Contact />

@@ -1,5 +1,6 @@
 .carousel-resto {
   /* z-index: -2; */
+  margin-top: -70px;
 }
 
 /* Fixing fade bug (hidden slide has clickable buttons) */

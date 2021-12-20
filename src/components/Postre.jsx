@@ -2,7 +2,7 @@ import PriceItem from "./PriceItem";
 
 function Postre({ postre, even }) {
   return (
-    <div className="picada-wrapper">
+    <div className={postre.img ? "picada-wrapper" : "picada-wrapper no-image"}>
       <div className="picada container" data-aos="flip-up">
         <div
           className="picada-text"
@@ -29,12 +29,14 @@ function Postre({ postre, even }) {
           </div>
         </div>
 
-        <img
-          className="picada-image"
-          src={postre?.img}
-          alt=""
-          data-aos={even ? "fade-left" : "fade-right"}
-        />
+        {postre.img && (
+          <img
+            className="picada-image"
+            src={postre.img}
+            alt=""
+            data-aos={even ? "fade-left" : "fade-right"}
+          />
+        )}
       </div>
     </div>
   );

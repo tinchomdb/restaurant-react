@@ -8,12 +8,25 @@
   margin: 2em 0;
 }
 
+.no-image {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .picada-wrapper:nth-of-type(2n) .picada {
   flex-direction: row-reverse;
 }
 
+.picada-wrapper {
+}
+
 .picada-text {
   width: 50%;
+}
+
+.no-image .picada-text {
+  width: 100%;
 }
 
 .picada-image {

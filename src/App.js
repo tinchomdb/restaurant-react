@@ -1,24 +1,54 @@
 import "./App.css";
-import { Provider } from "react-redux";
-import { store } from "./store/store";
+import { useDispatch } from "react-redux";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Carta from "./pages/Carta";
 import Delivery from "./pages/Delivery";
 import Regalos from "./pages/Regalos";
+import Order from "./pages/Order";
+import Success from "./pages/Success";
+import { getProducts } from "./store/productsSlice";
+import { useEffect } from "react";
+import axios from "axios";
+import { getSections } from "./store/sectionsSlice";
+import Aos from "aos";
 
 function App() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    async function fetchData() {
+      const sectionsRequest = await axios.get(
+        "https://picardo-api.herokuapp.com/api/sections"
+      );
+      const productsRequest = await axios.get(
+        "https://picardo-api.herokuapp.com/api/products"
+      );
+
+      dispatch(getSections(sectionsRequest.data));
+      dispatch(getProducts(productsRequest.data));
+    }
+
+    fetchData();
+  }, [dispatch]);
+
+  useEffect(() => {
+    Aos.init({
+      duration: 600,
+      easing: "ease-out-back",
+    });
+  }, []);
+
   return (
-    <Provider store={store}>
-      <div className="App">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="carta" element={<Carta />} />
-          <Route path="delivery" element={<Delivery />} />
-          <Route path="regalos" element={<Regalos />} />
-        </Routes>
-      </div>
-    </Provider>
+    <div className="App">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="carta" element={<Carta />} />
+        <Route path="delivery" element={<Delivery />} />
+        <Route path="regalos" element={<Regalos />} />
+        <Route path="orden" element={<Order />} />
+        <Route path="exito" element={<Success />} />
+      </Routes>
+    </div>
   );
 }
 

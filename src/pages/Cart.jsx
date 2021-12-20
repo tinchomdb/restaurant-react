@@ -6,10 +6,11 @@ import Button from "../components/Button";
 import { useDispatch, useSelector } from "react-redux";
 import { Add, Close, DeleteForever, Remove } from "@mui/icons-material";
 import { removeItemFromCart, decrement, increment } from "../store/cartSlice";
+import { useNavigate } from "react-router";
 
 function Cart({ onClose }) {
   const items = useSelector((state) => state.cart.cartItems);
-  console.log("items", items);
+  const navigate = useNavigate();
 
   const dispatch = useDispatch();
   const subtotal = items.reduce(
@@ -26,7 +27,7 @@ function Cart({ onClose }) {
       <div className="cart">
         <div className="cart-list">
           <h4>Su Pedido</h4>
-          {console.log("item0", items[0])}
+
           {items.length > 0
             ? items.map((item, index) => (
                 <div className="cart-item" key={index}>
@@ -78,7 +79,7 @@ function Cart({ onClose }) {
             <Close />
           </div>
 
-          <Button onClick={onClose}>Confirmar Pedido</Button>
+          <Button onClick={() => navigate("/orden")}>Confirmar Pedido</Button>
         </div>
       </div>
     </>,
