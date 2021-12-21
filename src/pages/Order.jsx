@@ -83,7 +83,7 @@ const Order = () => {
         "https://picardo-api.herokuapp.com/api/orders",
         newOrder
       );
-      console.log("response", res);
+
       if (res.status === 200) {
         dispatch(deleteCart());
         navigate("/exito");
@@ -137,23 +137,24 @@ const Order = () => {
                     <div className="order-left-col">
                       <img src={item.img} alt="" className="order-item-photo" />
                     </div>
-
-                    <div className="order-item-info">
-                      <span className="order-cart-item-title">
-                        {item.title}
-                      </span>
-                      <span className="order-cart-item-price">
-                        Precio: ${item.price}
-                      </span>
-                      <div className="order-cart-item-quantity-group">
-                        <span className="order-cart-item-quantity">
-                          Cantidad: {item.quantity}
+                    <div className="order-right-col">
+                      <div className="order-item-info">
+                        <span className="order-cart-item-title">
+                          {item.title}
                         </span>
+                        <span className="order-cart-item-price">
+                          Precio: ${item.price}
+                        </span>
+                        <div className="order-cart-item-quantity-group">
+                          <span className="order-cart-item-quantity">
+                            Cantidad: {item.quantity}
+                          </span>
+                        </div>
                       </div>
+                      <span className="order-cart-item-subtotal">
+                        Subtotal: ${item.price * item.quantity}
+                      </span>
                     </div>
-                    <span className="order-cart-item-subtotal">
-                      Subtotal: ${item.price * item.quantity}
-                    </span>
                   </div>
                 ))
               : "Carrito Vacío"}

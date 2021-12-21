@@ -46,8 +46,19 @@
 
 .order-cart-item {
   display: flex;
-  gap: 10px;
+  border-bottom: 1px solid gray;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+}
+
+.order-left-col {
+  margin-right: 2em;
+}
+
+.order-right-col {
+  display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 .order img {
@@ -57,4 +68,19 @@
 .order-item-info {
   display: flex;
   flex-direction: column;
+}
+
+@media (max-width: 800px) {
+  .order-cart-item {
+    display: block;
+  }
+  .order form {
+    padding: 30px 1em;
+  }
+}
+
+@media (max-width: 470px) {
+  .order-item-info {
+    max-width: 200px;
+  }
 }

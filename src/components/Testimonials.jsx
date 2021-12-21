@@ -21,7 +21,7 @@ var settings = {
   fade: true,
 };
 
-function Testimonials() {
+function Testimonials({ comments }) {
   return (
     <div className="testimonials" data-aos="fade-up">
       <Parallax
@@ -35,23 +35,12 @@ function Testimonials() {
             Comentarios de nuestros clientes
           </h2>
           <Slider {...settings}>
-            <p className="testimonial-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-              debitis sint eius consectetur tempore blanditiis non maiores vel,
-              veniam eaque.
-            </p>
-            <p className="testimonial-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab hic,
-              natus distinctio tempore sequi quas ipsam animi magnam voluptate
-              eos incidunt dicta explicabo? Perferendis magni tempore
-              accusantium dolore iste praesentium.
-            </p>
-            <p className="testimonial-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-              dicta modi adipisci aspernatur. Possimus excepturi facilis optio
-              distinctio officiis impedit molestiae dicta! Repellat, molestiae
-              corporis?
-            </p>
+            {comments?.map((item, index) => (
+              <>
+                <p className="testimonial-text">{item.text}</p>
+                <p className="testimonial-text">{item.author}</p>
+              </>
+            ))}
           </Slider>
         </div>
       </Parallax>

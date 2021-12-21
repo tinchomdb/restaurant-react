@@ -11,6 +11,7 @@ import { getProducts } from "./store/productsSlice";
 import { useEffect } from "react";
 import axios from "axios";
 import { getSections } from "./store/sectionsSlice";
+import { getComments } from "./store/commentsSlice";
 import Aos from "aos";
 
 function App() {
@@ -23,9 +24,14 @@ function App() {
       const productsRequest = await axios.get(
         "https://picardo-api.herokuapp.com/api/products"
       );
+      const commentsRequest = await axios.get(
+        "https://picardo-api.herokuapp.com/api/comments"
+      );
 
+      console.log("app", commentsRequest);
       dispatch(getSections(sectionsRequest.data));
       dispatch(getProducts(productsRequest.data));
+      dispatch(getComments(commentsRequest.data));
     }
 
     fetchData();

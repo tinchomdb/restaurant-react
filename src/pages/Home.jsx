@@ -11,14 +11,15 @@ import { useSelector } from "react-redux";
 
 function Home() {
   const storeSections = useSelector((state) => state.sections.sectionsItems);
-
+  const storeComments = useSelector((state) => state.comments.commentsItems);
+  console.log("home", storeComments);
   return (
     <div className="home">
       <Navbar />
       <CarouselResto id="home" sections={storeSections} />
       <About sections={storeSections} />
       <Gallery />
-      <Testimonials />
+      <Testimonials comments={storeComments} />
       <Contact />
     </div>
   );
