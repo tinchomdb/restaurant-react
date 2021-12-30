@@ -28,7 +28,6 @@ function App() {
         "https://picardo-api.herokuapp.com/api/comments"
       );
 
-      console.log("app", commentsRequest);
       dispatch(getSections(sectionsRequest.data));
       dispatch(getProducts(productsRequest.data));
       dispatch(getComments(commentsRequest.data));
