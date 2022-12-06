@@ -26,6 +26,7 @@
   text-transform: uppercase;
   font-size: 12px;
   font-weight: bold;
+  padding: 10px 22px;
   padding-right: 22px;
   padding-left: 22px;
   text-transform: uppercase;
@@ -33,7 +34,7 @@
 }
 
 .navbar li:hover {
-  color: goldenrod;
+  background-color: #611e26;
 }
 
 .navbar-links {
@@ -46,24 +47,24 @@
   font-size: 18px;
   font-weight: bold;
 }
-#nav-li-button {
-  padding-right: 0;
+#nav-li-button:hover {
+  background-color: black;
 }
 
-.nav-button {
-  background: goldenrod;
+.nav-button li {
+  background: #611e26;
   border-radius: 0;
   border: 0;
   color: #f9f9f9;
-  font-size: inherit;
-  font-weight: normal;
-  padding: 10px 25px;
+  /* font-size: inherit;
+  font-weight: normal; */
+  /* padding: 10px 22px; */
   transition: 0.5s 0.2s;
   margin-right: 0;
 }
 
-.nav-button:hover {
-  color: goldenrod;
+.nav-button li:hover {
+  /* color: #611e26; */
   background-color: black;
 }
 
@@ -84,7 +85,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: goldenrod;
+  background-color: #611e26;
   border-radius: 50%;
   padding: 0.3em;
   font-size: 0.9rem;
@@ -143,6 +144,6 @@
   }
 
   .active li {
-    padding-bottom: 3em;
+    margin-bottom: 3em;
   }
 }

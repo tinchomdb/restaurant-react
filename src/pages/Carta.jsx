@@ -8,7 +8,6 @@ import { useSelector } from "react-redux";
 function Carta() {
   const storeProducts = useSelector((state) => state.products.productsItems);
   const productsInStock = storeProducts.filter((item) => item.inStock);
-  console.log("inStock", productsInStock);
 
   return (
     <div

@@ -35,27 +35,26 @@ function Navbar() {
             <Link to="/#contacto">
               <li>Contacto</li>
             </Link>
-            <li id="nav-li-button">
-              <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLScJRF1KuAr37zNhg6Uf8PMg4zMD6STU94YG_hayhhidQw6ynw/viewform"
-                className="nav-button"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Reservar
-              </a>
-            </li>
+
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLScJRF1KuAr37zNhg6Uf8PMg4zMD6STU94YG_hayhhidQw6ynw/viewform"
+              className="nav-button"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <li id="nav-li-button">Reservar</li>
+            </a>
           </ul>
 
           {cartIsOpen && <Cart onClose={() => setCartIsOpen(false)} />}
 
           <div className="options-container">
-            <div className="cart-button" onClick={() => setCartIsOpen(true)}>
+            {/* <div className="cart-button" onClick={() => setCartIsOpen(true)}>
               <ShoppingCart />
               <span className="cart-badge">
                 {items.reduce((prev, curr) => prev + curr.quantity, 0)}
               </span>
-            </div>
+            </div> */}
             <div
               className="toggle-button"
               onClick={() => setToggleMenu(!toggleMenu)}

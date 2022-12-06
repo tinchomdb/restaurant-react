@@ -11,6 +11,7 @@ html {
 body {
   background: white;
   font-family: "Montserrat", sans-serif;
+  --main-color: #611e26;
 }
 
 .container {

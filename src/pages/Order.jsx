@@ -98,7 +98,7 @@ const Order = () => {
       deliveryCost: delivery,
       total: total,
     };
-    console.log(newOrder);
+
     postOrder();
   };
 

@@ -56,7 +56,7 @@ function Picada({ picada, even }) {
               <PriceItem size={picada?.title} price={picada.price} />
             )}
           </div>
-          {picada.categories?.includes("regalos") && (
+          {/* {picada.categories?.includes("regalos") && (
             <form onSubmit={onSubmitHandler}>
               <input
                 className="picada-input"
@@ -69,7 +69,7 @@ function Picada({ picada, even }) {
               />
               <Button>Encargá</Button>
             </form>
-          )}
+          )} */}
         </div>
 
         <img

@@ -18,7 +18,7 @@ function Cart({ onClose }) {
     0
   );
   //DELIVERY TO BE FIXED
-  const delivery = 200;
+  const delivery = 300;
   const total = subtotal + delivery;
 
   return ReactDOM.createPortal(
@@ -68,7 +68,7 @@ function Cart({ onClose }) {
             <span className="summary-item-total">${subtotal}</span>
           </div>
           <div className="summary-item">
-            <span className="summary-item-title">Envío</span>
+            <span className="summary-item-title">Envío (Aprox)</span>
             <span className="summary-item-total">${delivery}</span>
           </div>
           <div className="summary-item">
