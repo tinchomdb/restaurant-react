@@ -27,7 +27,7 @@ function Contact() {
             <a href="https://api.whatsapp.com/send?phone=542615738257&text=Hola!">
               <li className="social-item">
                 <WhatsApp />
-                <p>2615358947</p>
+                <p>2615738257</p>
               </li>
             </a>
             <a href="https://www.instagram.com/picardobar/">

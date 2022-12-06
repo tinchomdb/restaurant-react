@@ -2,6 +2,7 @@ import React from "react";
 import "./Drinks.css";
 
 import DrinkCategory from "./DrinkCategory";
+import Postres from "./Postres";
 
 function Bebidas({ products }) {
   const bebidasSinAlcohol = products
@@ -82,6 +83,7 @@ function Bebidas({ products }) {
       <DrinkCategory drinks={espumantes} title="Espumantes" />
       <h2 className="carta-section-title ">Cocktails</h2>
       <DrinkCategory drinks={cocktails} title="Cocktails" />
+      <Postres postres={cocktails} title="Cocktails"></Postres>
     </div>
   );
 }
