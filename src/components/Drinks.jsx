@@ -81,7 +81,7 @@ function Bebidas({ products }) {
       <DrinkCategory drinks={rosados} title="Rosados" />
       <DrinkCategory drinks={dulces} title="Dulces" />
       <DrinkCategory drinks={espumantes} title="Espumantes" />
-      <h2 className="carta-section-title ">Cocktails</h2>
+      {/* <h2 className="carta-section-title ">Cocktails</h2> */}
       {/* <DrinkCategory drinks={cocktails} title="Cocktails" /> */}
       <Postres postres={cocktails} title="Cocktails"></Postres>
     </div>
